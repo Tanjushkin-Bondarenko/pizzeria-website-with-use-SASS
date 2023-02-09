@@ -1,0 +1,102 @@
+main{
+    height: 90vh;
+    width: 100vw;
+    #services{
+        background-image: url('bg/food.png');
+        
+        .services_name{
+             @extend %name;
+            color: $color1;
+            font-weight: 100;
+        }
+        .services_description{
+            @extend %menu_description;
+            color: lighten($color1, $amount: 25%);
+            font-size: calc($font-size - 6px);
+            font-weight: 100;
+            padding-top: 30px;
+        }
+        .services_menu{
+            display: flex;
+            padding: 10vh 12vw 20vh 12vw;
+            @for $i from 1 to 4{
+                .services_menu#{$i}{
+                  text-align: center;
+                  padding: 0 3vw;
+                }
+            }
+            img{
+                width: 75px;
+                height: 75px;
+                border: 1px solid darken($color2, $amount: 15%);
+                padding: 15px; 
+            }
+            .name{
+                @extend %h3;
+                color: lighten($color1, $amount: 15%);
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: $font-size;
+                padding: 3vh 0;
+            }
+            p{
+           color: lighten($color1, $amount: 25%);
+            font-size: calc($font-size - 7px);
+            font-weight: 100;
+            font-family: $font1;
+            }
+        }
+    }
+    #blog{
+        @extend %background;
+        .blog_name{
+             @extend %name;
+             color: $color3;
+             font-weight: 300;
+        }
+        .blog_description{
+        @extend %menu_description;
+        color: lighten($color1, $amount: 35%);
+        font-size: calc($font-size - 6px);
+        font-weight: 100;
+        padding-top: 30px;
+        }
+       .blog_menu{
+        display: flex;
+        padding: 3vh 10vw;
+        img{
+            width: 25vw;
+            height: 35vh;
+        }
+        .date{
+            color: lighten($color1, $amount: 35%);
+            font-family: $font2;
+            padding-top: 2vh;
+        }
+        .message{
+            width: 10px;
+            height: 10px;
+            color: lighten($color1, $amount: 35%);
+            
+        }
+        .name{
+            @extend %h3;
+            font-size: calc($font-size - 5px);
+            font-weight: 200;
+            padding: 2vh 0;
+            text-align: start;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        p{
+           font-family: $font2;
+           color: lighten($color1, $amount: 25%);
+           font-size: calc($font-size - 6px);
+           font-weight: 100;
+         
+        }
+       }
+
+    }
+}

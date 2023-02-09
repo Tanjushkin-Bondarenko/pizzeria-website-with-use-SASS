@@ -1,0 +1,133 @@
+%block_header {
+    justify-self: end;
+    text-align: end;
+    padding-right: 10px;
+    grid-row: 1/2;
+}
+
+%header_name {
+    font-family: $font2;
+    color: $color3;
+    font-variant: small-caps;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    font-size: calc($font-size + 32px);
+}
+
+%header_delicous {
+    font-weight: lighter;
+    font-family: $font3;
+    color: $color2;
+    font-size: calc($font-size + 22px);
+    letter-spacing: 0.2em;
+    font-style: oblique;
+}
+
+%header_description {
+    margin-top: 20px;
+    color: $color3;
+    width: 550px;
+    font-family: $font1;
+    font-size: $font-size;
+    letter-spacing: 0.1em;
+    font-weight: 100;
+}
+
+%button {
+    padding: 20px;
+    font-size: $font-size;
+    width: 200px;
+    margin: 100px 1px 0 1px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+%header_order_now {
+    background-color: $color2;
+    border: 0px solid;
+}
+
+%header_view {
+    background-color: rgb(255, 255, 255, 0);
+    color: $color3;
+    border: $border;
+}
+
+%header_img {
+    grid-row: 1/2;
+    max-width:auto;
+    height: 65vh;
+}
+
+%dot {
+    font-size: 15px;
+    color: darken($color3, $amount: 15%);
+    padding-bottom: 2%;
+    padding-left: 40%;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    justify-items: center;
+}
+
+%header_dot {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 3px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+%background{
+    background-image: url("bg/bg_4.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+%name{
+    margin: 0;
+    color: $color3;
+    font-family: $font2;
+    font-weight: 700;
+    font-size: calc($font-size + 10px);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10vh;
+    letter-spacing: 0.1em;
+}
+%h3{
+     margin: 0;
+     color: $color3;
+     text-align: center;
+     font-family: $font2;
+     font-size: $font-size;
+}
+%add_btn{
+    border: $border;
+    background-color: hsl(208, 100%, 100%, 0);
+    color: $color3;
+    height: 45px;
+    padding: 5px 10px 5px 10px;
+    font-size: calc($font-size - 3px);
+    margin-left: 30%;
+    &:hover {
+        cursor: pointer;
+    }
+}
+%price{
+     margin: 0;
+     color: $color2;
+     $font-family: $font3;
+      font-size: calc($font-size - 4px);
+}
+%menu_description{
+    padding: 10px 35vw 50px 35vw;
+    color: darken($color3, $amount: 45%);
+    font-size: calc($font-size - 3px);
+    font-family: $font2;
+    text-align: center;
+    margin: 0;
+}

@@ -81,7 +81,7 @@ header #header3 .dot i:hover, header #header2 .dot i:hover, header #header1 .dot
   cursor: pointer;
 }
 
-main #blog, #menu_pricing, #menu_hot_meals, main #home2 {
+main #about, main #blog, #menu_pricing, #menu_hot_meals, main #home2 {
   background-image: url("bg/bg_4.jpg");
   background-size: 100% 100vh;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ main #blog .blog_name, main #services .services_name, #menu_pricing .menu2_name,
   letter-spacing: 0.1em;
 }
 
-main #blog .blog_menu .name, main #services .services_menu .name, #menu_pricing .menu2_blocks .name, #menu_hot_meals .menu_block h3, main #home2 .home2_block_pizza h3 {
+main #about #article_video article .topic_of_article, main #blog .blog_menu .name, main #services .services_menu .name, #menu_pricing .menu2_blocks .name, #menu_hot_meals .menu_block h3, main #home2 .home2_block_pizza h3 {
   margin: 0;
   color: rgba(255, 255, 255, 0.966);
   text-align: center;
@@ -812,7 +812,7 @@ main #blog .blog_name {
   font-weight: 300;
 }
 main #blog .blog_description {
-  color: rgba(89, 89, 89, 0.985);
+  color: rgba(115, 115, 115, 0.985);
   font-size: 14px;
   font-weight: 100;
   padding-top: 30px;
@@ -826,7 +826,7 @@ main #blog .blog_menu img {
   height: 35vh;
 }
 main #blog .blog_menu .date {
-  color: rgba(89, 89, 89, 0.985);
+  color: rgba(115, 115, 115, 0.985);
   font-family: "Josefin Sans", sans-serif;
   padding-top: 2vh;
 }
@@ -846,9 +846,180 @@ main #blog .blog_menu .name:hover {
 }
 main #blog .blog_menu p {
   font-family: "Josefin Sans", sans-serif;
-  color: rgba(64, 64, 64, 0.985);
+  color: rgba(115, 115, 115, 0.985);
   font-size: 14px;
   font-weight: 100;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+main #about .contacts_info {
+  background-color: rgba(0, 0, 0, 0.985);
+  padding-left: 12vw;
+  display: flex;
+}
+main #about .contacts_info .contacts_info1 {
+  height: 13vh;
+  width: 17vw;
+  padding: 2vh 2vw;
+}
+main #about .contacts_info .contacts_info1 .icon {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  padding-right: 2px;
+}
+main #about .contacts_info .contacts_info1 .info {
+  color: rgba(255, 255, 255, 0.966);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+}
+main #about .contacts_info .contacts_info1 p {
+  margin: 0;
+  color: rgba(115, 115, 115, 0.985);
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 1vh;
+  font-size: 13px;
+}
+main #about .contacts_info .contacts_info2 {
+  height: 13vh;
+  width: 17vw;
+  padding: 2vh 2vw;
+}
+main #about .contacts_info .contacts_info2 .icon {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  padding-right: 2px;
+}
+main #about .contacts_info .contacts_info2 .info {
+  color: rgba(255, 255, 255, 0.966);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+}
+main #about .contacts_info .contacts_info2 p {
+  margin: 0;
+  color: rgba(115, 115, 115, 0.985);
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 1vh;
+  font-size: 13px;
+}
+main #about .contacts_info .contacts_info3 {
+  height: 13vh;
+  width: 17vw;
+  padding: 2vh 2vw;
+}
+main #about .contacts_info .contacts_info3 .icon {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  padding-right: 2px;
+}
+main #about .contacts_info .contacts_info3 .info {
+  color: rgba(255, 255, 255, 0.966);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+}
+main #about .contacts_info .contacts_info3 p {
+  margin: 0;
+  color: rgba(115, 115, 115, 0.985);
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 1vh;
+  font-size: 13px;
+}
+main #about .contacts_info .contacts_info4 {
+  height: 13vh;
+  width: 17vw;
+  padding: 2vh 2vw;
+}
+main #about .contacts_info .contacts_info4 .icon {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  padding-right: 2px;
+}
+main #about .contacts_info .contacts_info4 .info {
+  color: rgba(255, 255, 255, 0.966);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+}
+main #about .contacts_info .contacts_info4 p {
+  margin: 0;
+  color: rgba(115, 115, 115, 0.985);
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 1vh;
+  font-size: 13px;
+}
+main #about .contacts_info .contacts_info4 {
+  background-color: rgb(223, 183, 62);
+  width: 37vw;
+  padding-right: 0;
+  margin-left: 0;
+}
+main #about #article_video {
+  display: flex;
+  height: 70vh;
+  border-bottom: 5px solid rgb(223, 183, 62);
+}
+main #about #article_video #video {
+  margin: 0;
+  width: 4000px;
+}
+main #about #article_video article {
+  padding: 12vh 5vw 5vh 5vw;
+  align-items: center;
+}
+main #about #article_video article img {
+  height: 25px;
+  width: auto;
+}
+main #about #article_video article .topic_of_article {
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  padding-bottom: 2vh;
+}
+main #about #article_video article .topic_of_article .pizza {
+  color: rgb(223, 183, 62);
+}
+main #about #article_video article p {
+  color: rgba(115, 115, 115, 0.985);
+  font-size: 22px;
+  line-height: 25px;
+}
+
+#contacnt {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+#contacnt iframe {
+  height: 90vh;
+}
+#contacnt .contact_us {
+  background-color: rgba(0, 0, 0, 0.985);
+  padding: 10vh 13vw;
+}
+#contacnt .contact_us .topic {
+  color: rgba(255, 255, 255, 0.966);
+  font-size: 23px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+#contacnt .contact_us .input_name {
+  width: 30vw;
+  background-color: rgba(0, 0, 0, 0.985);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.966);
+  border-top-color: rgba(0, 0, 0, 0.985);
+  border-left-color: rgba(0, 0, 0, 0.985);
+  border-right-color: rgba(0, 0, 0, 0.985);
+  padding: 2vh 0;
+}
+#contacnt .contact_us label {
+  color: rgba(255, 255, 255, 0.966);
 }
 
 body {

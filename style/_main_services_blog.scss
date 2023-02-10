@@ -56,7 +56,7 @@ main{
         }
         .blog_description{
         @extend %menu_description;
-        color: lighten($color1, $amount: 35%);
+        color: lighten($color1, $amount: 45%);
         font-size: calc($font-size - 6px);
         font-weight: 100;
         padding-top: 30px;
@@ -69,7 +69,7 @@ main{
             height: 35vh;
         }
         .date{
-            color: lighten($color1, $amount: 35%);
+            color: lighten($color1, $amount: 45%);
             font-family: $font2;
             padding-top: 2vh;
         }
@@ -91,7 +91,7 @@ main{
         }
         p{
            font-family: $font2;
-           color: lighten($color1, $amount: 25%);
+           color: lighten($color1, $amount: 45%);
            font-size: calc($font-size - 6px);
            font-weight: 100;
          

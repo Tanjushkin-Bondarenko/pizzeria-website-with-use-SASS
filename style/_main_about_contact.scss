@@ -1,0 +1,106 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    #about{
+        @extend %background;
+        .contacts_info{
+            background-color: $color1;
+            padding-left: 12vw;
+            display: flex;
+        @for $i from 1 to 5{
+            .contacts_info#{$i}{
+                height: 13vh;
+                width: 17vw;
+                padding: 2vh 2vw;
+            .icon {
+                margin: 0;
+                width: 15px;
+                height: 15px;padding-right: 2px;
+                }
+            .info{
+                color: $color3;
+                font-family: $font2;
+                font-size: calc($font-size - 5px);
+                }
+            p{
+                margin: 0;
+                color: lighten($color1, $amount: 45%);
+                font-family: $font2;
+                padding-top: 1vh;
+                font-size: calc($font-size - 7px);
+                }}
+            }
+            .contacts_info4{
+                background-color: $color2;
+                width: 37vw;
+                padding-right: 0;
+                margin-left: 0;
+            }
+        }
+    #article_video{
+      display: flex;
+      height: 70vh;
+      border-bottom: 5px solid $color2;
+    #video {
+       margin: 0;
+       width: 4000px;
+    }
+    article {
+       padding: 12vh 5vw 5vh 5vw;
+       align-items: center;
+    img{
+        height: 25px;
+        width: auto;
+    }
+    .topic_of_article {
+     @extend %h3;
+        text-transform: uppercase;
+        font-size: calc($font-size + 5px);
+        letter-spacing: 0.1em;
+        padding-bottom: 2vh;
+    .pizza{
+        color: $color2;
+    }}
+    p {
+         color: lighten($color1, $amount: 45%);
+         font-size: calc($font-size + 2px);
+         line-height: 25px;
+} }
+}
+}
+}
+#contacnt{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+
+    iframe{
+        height: 90vh;
+    }
+      .contact_us{
+    background-color: $color1;
+    padding: 10vh 13vw;
+  .topic{
+    color: $color3;
+    font-size: calc($font-size + 3px);
+    font-family: $font2;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+
+  }
+  .input_name {
+    width: 30vw;
+    background-color: $color1;
+    border-bottom: 1px solid $color3;
+    border-top-color:  $color1;
+    border-left-color: $color1;
+    border-right-color:  $color1;
+    padding: 2vh 0;
+   
+  }
+  label{
+     color: $color3;
+  }
+      }
+
+}

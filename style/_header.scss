@@ -53,6 +53,9 @@ header {
                     padding-left: 0;
                     color: $color3;
                     font-family: $font1;
+                     &:hover {
+                         cursor: pointer;
+                     }
                 }}}
         .home {
             color: $color2;

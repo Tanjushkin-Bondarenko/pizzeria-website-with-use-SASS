@@ -1,8 +1,4 @@
-main {
-    height: 90vh;
-    width: 100%;
     #home1 {
-        width: 100vw;
         background: linear-gradient(90deg, hsl(0, 0%, 0%, 0.8), hsl(0, 0%, 0%, 0.8)), url('bg/bg_2.jpg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -59,7 +55,6 @@ main {
                 }}}}
 
     #home2 {
-        width: 100vw;
         height: 90vh;
         @extend %background;
         display: grid;
@@ -90,6 +85,9 @@ main {
                     margin-top: 3vh;
                     grid-column-start: calc(1 + $i);
                     grid-column-end: calc(2 + $i);
+                     &:hover {
+                         cursor: pointer;
+                     }
                 }
             }
             .pizza{
@@ -149,4 +147,4 @@ main {
             @extend %add_btn;
         }
     }
-}
+    

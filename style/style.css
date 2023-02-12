@@ -81,13 +81,13 @@ header #header3 .dot i:hover, header #header2 .dot i:hover, header #header1 .dot
   cursor: pointer;
 }
 
-main #about, main #blog, #menu_pricing, #menu_hot_meals, main #home2 {
+#about, #blog, #menu_pricing, #menu_hot_meals, #home2 {
   background-image: url("bg/bg_4.jpg");
   background-size: 100% 100vh;
   background-repeat: no-repeat;
 }
 
-main #blog .blog_name, main #services .services_name, #menu_pricing .menu2_name, #menu_hot_meals .menu1_name {
+#blog .blog_name, #services .services_name, #menu_pricing .menu2_name, #menu_hot_meals .menu1_name {
   margin: 0;
   color: rgba(255, 255, 255, 0.966);
   font-family: "Josefin Sans", sans-serif;
@@ -99,7 +99,7 @@ main #blog .blog_name, main #services .services_name, #menu_pricing .menu2_name,
   letter-spacing: 0.1em;
 }
 
-main #about #article_video article .topic_of_article, main #blog .blog_menu .name, main #services .services_menu .name, #menu_pricing .menu2_blocks .name, #menu_hot_meals .menu_block h3, main #home2 .home2_block_pizza h3 {
+#about #article_video article .topic_of_article, #blog .blog_menu .name, #services .services_menu .name, #menu_pricing .menu2_blocks .name, #menu_hot_meals .menu_block h3, #home2 .home2_block_pizza h3 {
   margin: 0;
   color: rgba(255, 255, 255, 0.966);
   text-align: center;
@@ -107,7 +107,7 @@ main #about #article_video article .topic_of_article, main #blog .blog_menu .nam
   font-size: 20px;
 }
 
-#menu_hot_meals .menu_block .menu1_order, main #home2 .home2_add {
+#menu_hot_meals .menu_block .menu1_order, #home2 .home2_add {
   border: 1px solid rgb(238, 235, 235);
   background-color: hsla(208deg, 100%, 100%, 0);
   color: rgba(255, 255, 255, 0.966);
@@ -116,17 +116,17 @@ main #about #article_video article .topic_of_article, main #blog .blog_menu .nam
   font-size: 17px;
   margin-left: 30%;
 }
-#menu_hot_meals .menu_block .menu1_order:hover, main #home2 .home2_add:hover {
+#menu_hot_meals .menu_block .menu1_order:hover, #home2 .home2_add:hover {
   cursor: pointer;
 }
 
-#menu_pricing .menu2_blocks .price, #menu_hot_meals .menu_block .menu1_price, main #home2 .home2_block_pizza .home2_price {
+#menu_pricing .menu2_blocks .price, #menu_hot_meals .menu_block .menu1_price, #home2 .home2_block_pizza .home2_price {
   margin: 0;
   color: rgb(223, 183, 62);
   font-size: 16px;
 }
 
-main #blog .blog_description, main #services .services_description, #menu_pricing .menu2_description, #menu_hot_meals .menu1_description {
+#blog .blog_description, #services .services_description, #menu_pricing .menu2_description, #menu_hot_meals .menu1_description {
   padding: 10px 35vw 50px 35vw;
   color: rgba(140, 140, 140, 0.966);
   font-size: 17px;
@@ -191,6 +191,9 @@ header #header_top #menu_top .menu_top1 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
+header #header_top #menu_top .menu_top1:hover {
+  cursor: pointer;
+}
 header #header_top #menu_top .menu_top2 {
   font-size: 18px;
   font-weight: 400;
@@ -198,6 +201,9 @@ header #header_top #menu_top .menu_top2 {
   padding-left: 0;
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
+}
+header #header_top #menu_top .menu_top2:hover {
+  cursor: pointer;
 }
 header #header_top #menu_top .menu_top3 {
   font-size: 18px;
@@ -207,6 +213,9 @@ header #header_top #menu_top .menu_top3 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
+header #header_top #menu_top .menu_top3:hover {
+  cursor: pointer;
+}
 header #header_top #menu_top .menu_top4 {
   font-size: 18px;
   font-weight: 400;
@@ -214,6 +223,9 @@ header #header_top #menu_top .menu_top4 {
   padding-left: 0;
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
+}
+header #header_top #menu_top .menu_top4:hover {
+  cursor: pointer;
 }
 header #header_top #menu_top .menu_top5 {
   font-size: 18px;
@@ -223,6 +235,9 @@ header #header_top #menu_top .menu_top5 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
+header #header_top #menu_top .menu_top5:hover {
+  cursor: pointer;
+}
 header #header_top #menu_top .menu_top6 {
   font-size: 18px;
   font-weight: 400;
@@ -230,6 +245,9 @@ header #header_top #menu_top .menu_top6 {
   padding-left: 0;
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
+}
+header #header_top #menu_top .menu_top6:hover {
+  cursor: pointer;
 }
 header #header_top .home {
   color: rgb(223, 183, 62);
@@ -321,12 +339,7 @@ header #header3 .dot .third {
   color: rgba(179, 179, 179, 0.966);
   border: 2px solid rgba(179, 179, 179, 0.966);
 }
-main {
-  height: 90vh;
-  width: 100%;
-}
-main #home1 {
-  width: 100vw;
+#home1 {
   background: linear-gradient(90deg, hsla(0deg, 0%, 0%, 0.8), hsla(0deg, 0%, 0%, 0.8)), url("bg/bg_2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -334,42 +347,42 @@ main #home1 {
   grid-template-columns: repeat(4, 2fr);
   grid-template-rows: repeat(2, 2fr);
 }
-main #home1 .home1_img_block {
+#home1 .home1_img_block {
   grid-column: 1/4;
   grid-row: 1/2;
   display: grid;
   margin-top: 5px;
   width: 100%;
 }
-main #home1 .home1_img_block .home_img1 {
+#home1 .home1_img_block .home_img1 {
   width: 25vw;
   height: 43vh;
   grid-row: 1/2;
   grid-column-start: 1;
   grid-column-end: 2;
 }
-main #home1 .home1_img_block .home_img2 {
+#home1 .home1_img_block .home_img2 {
   width: 25vw;
   height: 43vh;
   grid-row: 1/2;
   grid-column-start: 2;
   grid-column-end: 3;
 }
-main #home1 .home1_img_block .home_img3 {
+#home1 .home1_img_block .home_img3 {
   width: 25vw;
   height: 43vh;
   grid-row: 1/2;
   grid-column-start: 3;
   grid-column-end: 4;
 }
-main #home1 .home1_img_block .home_img4 {
+#home1 .home1_img_block .home_img4 {
   width: 25vw;
   height: 43vh;
   grid-row: 1/2;
   grid-column-start: 4;
   grid-column-end: 5;
 }
-main #home1 .home_icon {
+#home1 .home_icon {
   grid-row: 2/3;
   padding-top: 15vh;
   display: grid;
@@ -377,72 +390,72 @@ main #home1 .home_icon {
   grid-template-columns: 2fr repeat(4, 1fr) 2fr;
   justify-items: center;
 }
-main #home1 .home_icon img {
+#home1 .home_icon img {
   width: 3vw;
   padding: 18px;
   border: 2px solid rgb(223, 183, 62);
 }
-main #home1 .home_icon p {
+#home1 .home_icon p {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
 }
-main #home1 .home_icon .home1_text {
+#home1 .home_icon .home1_text {
   color: rgba(204, 204, 204, 0.966);
   font-size: 16px;
   font-weight: 100;
   width: 90px;
 }
-main #home1 .home_icon .icon_img1 {
+#home1 .home_icon .icon_img1 {
   margin-right: 28px;
   color: rgb(223, 183, 62);
   height: auto;
   grid-column-start: 2;
   grid-column-end: 3;
 }
-main #home1 .home_icon .icon_img2 {
+#home1 .home_icon .icon_img2 {
   margin-right: 28px;
   color: rgb(223, 183, 62);
   height: auto;
   grid-column-start: 3;
   grid-column-end: 4;
 }
-main #home1 .home_icon .icon_img3 {
+#home1 .home_icon .icon_img3 {
   margin-right: 28px;
   color: rgb(223, 183, 62);
   height: auto;
   grid-column-start: 4;
   grid-column-end: 5;
 }
-main #home1 .home_icon .icon_img4 {
+#home1 .home_icon .icon_img4 {
   margin-right: 28px;
   color: rgb(223, 183, 62);
   height: auto;
   grid-column-start: 5;
   grid-column-end: 6;
 }
-main #home2 {
-  width: 100vw;
+
+#home2 {
   height: 90vh;
   display: grid;
   grid-template-rows: 1fr 5fr;
   grid-template-columns: repeat(3, 2fr);
 }
-main #home2 .home2_img {
+#home2 .home2_img {
   grid-column: 1/2;
   width: 40vw;
   height: 75vh;
   grid-row: 1/3;
   margin-right: 2vw;
 }
-main #home2 .block_btn {
+#home2 .block_btn {
   height: 10vh;
   grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
   grid-gap: 2px;
 }
-main #home2 .block_btn .home2_btn1 {
+#home2 .block_btn .home2_btn1 {
   height: 38px;
   color: rgb(223, 183, 62);
   font-size: 18px;
@@ -454,7 +467,10 @@ main #home2 .block_btn .home2_btn1 {
   grid-column-start: 2;
   grid-column-end: 3;
 }
-main #home2 .block_btn .home2_btn2 {
+#home2 .block_btn .home2_btn1:hover {
+  cursor: pointer;
+}
+#home2 .block_btn .home2_btn2 {
   height: 38px;
   color: rgb(223, 183, 62);
   font-size: 18px;
@@ -466,7 +482,10 @@ main #home2 .block_btn .home2_btn2 {
   grid-column-start: 3;
   grid-column-end: 4;
 }
-main #home2 .block_btn .home2_btn3 {
+#home2 .block_btn .home2_btn2:hover {
+  cursor: pointer;
+}
+#home2 .block_btn .home2_btn3 {
   height: 38px;
   color: rgb(223, 183, 62);
   font-size: 18px;
@@ -478,7 +497,10 @@ main #home2 .block_btn .home2_btn3 {
   grid-column-start: 4;
   grid-column-end: 5;
 }
-main #home2 .block_btn .home2_btn4 {
+#home2 .block_btn .home2_btn3:hover {
+  cursor: pointer;
+}
+#home2 .block_btn .home2_btn4 {
   height: 38px;
   color: rgb(223, 183, 62);
   font-size: 18px;
@@ -490,11 +512,14 @@ main #home2 .block_btn .home2_btn4 {
   grid-column-start: 5;
   grid-column-end: 6;
 }
-main #home2 .block_btn .pizza {
+#home2 .block_btn .home2_btn4:hover {
+  cursor: pointer;
+}
+#home2 .block_btn .pizza {
   color: rgba(0, 0, 0, 0.985);
   background-color: rgb(223, 183, 62);
 }
-main #home2 .home2_block_pizza {
+#home2 .home2_block_pizza {
   height: 80vh;
   grid-column: 2/4;
   grid-row: 2/4;
@@ -502,7 +527,7 @@ main #home2 .home2_block_pizza {
   height: 70vh;
   grid-template-columns: repeat(3, 2fr);
 }
-main #home2 .home2_block_pizza .home2_block_pizza1 {
+#home2 .home2_block_pizza .home2_block_pizza1 {
   height: 70vh;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -510,14 +535,14 @@ main #home2 .home2_block_pizza .home2_block_pizza1 {
   justify-items: center;
   grid-template-rows: repeat(3, 1fr);
 }
-main #home2 .home2_block_pizza .pizza1_img {
+#home2 .home2_block_pizza .pizza1_img {
   grid-row: 1/2;
   margin: 0;
 }
-main #home2 .home2_block_pizza .pizza1_desc {
+#home2 .home2_block_pizza .pizza1_desc {
   grid-row: 2/3;
 }
-main #home2 .home2_block_pizza .home2_block_pizza2 {
+#home2 .home2_block_pizza .home2_block_pizza2 {
   height: 70vh;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -525,14 +550,14 @@ main #home2 .home2_block_pizza .home2_block_pizza2 {
   justify-items: center;
   grid-template-rows: repeat(3, 1fr);
 }
-main #home2 .home2_block_pizza .pizza2_img {
+#home2 .home2_block_pizza .pizza2_img {
   grid-row: 1/2;
   margin: 0;
 }
-main #home2 .home2_block_pizza .pizza2_desc {
+#home2 .home2_block_pizza .pizza2_desc {
   grid-row: 2/3;
 }
-main #home2 .home2_block_pizza .home2_block_pizza3 {
+#home2 .home2_block_pizza .home2_block_pizza3 {
   height: 70vh;
   grid-column-start: 3;
   grid-column-end: 4;
@@ -540,21 +565,21 @@ main #home2 .home2_block_pizza .home2_block_pizza3 {
   justify-items: center;
   grid-template-rows: repeat(3, 1fr);
 }
-main #home2 .home2_block_pizza .pizza3_img {
+#home2 .home2_block_pizza .pizza3_img {
   grid-row: 1/2;
   margin: 0;
 }
-main #home2 .home2_block_pizza .pizza3_desc {
+#home2 .home2_block_pizza .pizza3_desc {
   grid-row: 2/3;
 }
-main #home2 .home2_block_pizza img {
+#home2 .home2_block_pizza img {
   height: 180px;
   width: 200px;
   border: 1px solid white;
   border-radius: 50%;
   text-align: center;
 }
-main #home2 .home2_block_pizza p {
+#home2 .home2_block_pizza p {
   margin: 0;
   color: rgba(153, 153, 153, 0.966);
   text-align: center;
@@ -565,7 +590,6 @@ main #home2 .home2_block_pizza p {
 }
 #menu_hot_meals {
   height: 90vh;
-  width: 100vw;
 }
 #menu_hot_meals .menu1_name {
   padding: 40px 0 15px 0;
@@ -645,7 +669,6 @@ main #home2 .home2_block_pizza p {
 }
 
 #menu_pricing {
-  width: 100vw;
   height: 90vh;
 }
 #menu_pricing .romb {
@@ -755,271 +778,487 @@ main #home2 .home2_block_pizza p {
   width: 27vw;
 }
 
-main {
+#services {
   height: 90vh;
-  width: 100vw;
-}
-main #services {
   background-image: url("bg/food.png");
 }
-main #services .services_name {
+#services .services_name {
   color: rgba(0, 0, 0, 0.985);
   font-weight: 100;
 }
-main #services .services_description {
+#services .services_description {
   color: rgba(64, 64, 64, 0.985);
   font-size: 14px;
   font-weight: 100;
   padding-top: 30px;
 }
-main #services .services_menu {
+#services .services_menu {
   display: flex;
   padding: 10vh 12vw 20vh 12vw;
 }
-main #services .services_menu .services_menu1 {
+#services .services_menu .services_menu1 {
   text-align: center;
   padding: 0 3vw;
 }
-main #services .services_menu .services_menu2 {
+#services .services_menu .services_menu2 {
   text-align: center;
   padding: 0 3vw;
 }
-main #services .services_menu .services_menu3 {
+#services .services_menu .services_menu3 {
   text-align: center;
   padding: 0 3vw;
 }
-main #services .services_menu img {
+#services .services_menu img {
   width: 75px;
   height: 75px;
   border: 1px solid #b38e1e;
   padding: 15px;
 }
-main #services .services_menu .name {
+#services .services_menu .name {
   color: rgba(38, 38, 38, 0.985);
   font-weight: 300;
   text-transform: uppercase;
   font-size: 20px;
   padding: 3vh 0;
 }
-main #services .services_menu p {
+#services .services_menu p {
   color: rgba(64, 64, 64, 0.985);
   font-size: 13px;
   font-weight: 100;
   font-family: "Poppins", sans-serif;
 }
-main #blog .blog_name {
+
+#blog {
+  height: 90vh;
+}
+#blog .blog_name {
   color: rgba(255, 255, 255, 0.966);
   font-weight: 300;
 }
-main #blog .blog_description {
+#blog .blog_description {
   color: rgba(115, 115, 115, 0.985);
   font-size: 14px;
   font-weight: 100;
   padding-top: 30px;
 }
-main #blog .blog_menu {
+#blog .blog_menu {
   display: flex;
   padding: 3vh 10vw;
 }
-main #blog .blog_menu img {
+#blog .blog_menu img {
   width: 25vw;
   height: 35vh;
 }
-main #blog .blog_menu .date {
+#blog .blog_menu .date {
   color: rgba(115, 115, 115, 0.985);
   font-family: "Josefin Sans", sans-serif;
   padding-top: 2vh;
 }
-main #blog .blog_menu .message {
+#blog .blog_menu .message {
   width: 10px;
   height: 10px;
   color: rgba(89, 89, 89, 0.985);
 }
-main #blog .blog_menu .name {
+#blog .blog_menu .name {
   font-size: 15px;
   font-weight: 200;
   padding: 2vh 0;
   text-align: start;
 }
-main #blog .blog_menu .name:hover {
+#blog .blog_menu .name:hover {
   cursor: pointer;
 }
-main #blog .blog_menu p {
+#blog .blog_menu p {
   font-family: "Josefin Sans", sans-serif;
   color: rgba(115, 115, 115, 0.985);
   font-size: 14px;
   font-weight: 100;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
+#about {
+  height: 90vh;
 }
-main #about .contacts_info {
+#about .contacts_info {
   background-color: rgba(0, 0, 0, 0.985);
   padding-left: 12vw;
   display: flex;
 }
-main #about .contacts_info .contacts_info1 {
+#about .contacts_info .contacts_info1 {
   height: 13vh;
   width: 17vw;
   padding: 2vh 2vw;
 }
-main #about .contacts_info .contacts_info1 .icon {
+#about .contacts_info .contacts_info1 .icon {
   margin: 0;
   width: 15px;
   height: 15px;
   padding-right: 2px;
 }
-main #about .contacts_info .contacts_info1 .info {
+#about .contacts_info .contacts_info1 .info {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
 }
-main #about .contacts_info .contacts_info1 p {
+#about .contacts_info .contacts_info1 p {
   margin: 0;
   color: rgba(115, 115, 115, 0.985);
   font-family: "Josefin Sans", sans-serif;
   padding-top: 1vh;
   font-size: 13px;
 }
-main #about .contacts_info .contacts_info2 {
+#about .contacts_info .contacts_info2 {
   height: 13vh;
   width: 17vw;
   padding: 2vh 2vw;
 }
-main #about .contacts_info .contacts_info2 .icon {
+#about .contacts_info .contacts_info2 .icon {
   margin: 0;
   width: 15px;
   height: 15px;
   padding-right: 2px;
 }
-main #about .contacts_info .contacts_info2 .info {
+#about .contacts_info .contacts_info2 .info {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
 }
-main #about .contacts_info .contacts_info2 p {
+#about .contacts_info .contacts_info2 p {
   margin: 0;
   color: rgba(115, 115, 115, 0.985);
   font-family: "Josefin Sans", sans-serif;
   padding-top: 1vh;
   font-size: 13px;
 }
-main #about .contacts_info .contacts_info3 {
+#about .contacts_info .contacts_info3 {
   height: 13vh;
   width: 17vw;
   padding: 2vh 2vw;
 }
-main #about .contacts_info .contacts_info3 .icon {
+#about .contacts_info .contacts_info3 .icon {
   margin: 0;
   width: 15px;
   height: 15px;
   padding-right: 2px;
 }
-main #about .contacts_info .contacts_info3 .info {
+#about .contacts_info .contacts_info3 .info {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
 }
-main #about .contacts_info .contacts_info3 p {
+#about .contacts_info .contacts_info3 p {
   margin: 0;
   color: rgba(115, 115, 115, 0.985);
   font-family: "Josefin Sans", sans-serif;
   padding-top: 1vh;
   font-size: 13px;
 }
-main #about .contacts_info .contacts_info4 {
+#about .contacts_info .contacts_info4 {
   height: 13vh;
   width: 17vw;
   padding: 2vh 2vw;
 }
-main #about .contacts_info .contacts_info4 .icon {
+#about .contacts_info .contacts_info4 .icon {
   margin: 0;
   width: 15px;
   height: 15px;
   padding-right: 2px;
 }
-main #about .contacts_info .contacts_info4 .info {
+#about .contacts_info .contacts_info4 .info {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
 }
-main #about .contacts_info .contacts_info4 p {
+#about .contacts_info .contacts_info4 p {
   margin: 0;
   color: rgba(115, 115, 115, 0.985);
   font-family: "Josefin Sans", sans-serif;
   padding-top: 1vh;
   font-size: 13px;
 }
-main #about .contacts_info .contacts_info4 {
+#about .contacts_info .contacts_info4 {
   background-color: rgb(223, 183, 62);
   width: 37vw;
   padding-right: 0;
   margin-left: 0;
 }
-main #about #article_video {
+#about #article_video {
   display: flex;
   height: 70vh;
   border-bottom: 5px solid rgb(223, 183, 62);
 }
-main #about #article_video #video {
+#about #article_video #video {
   margin: 0;
   width: 4000px;
 }
-main #about #article_video article {
+#about #article_video article {
   padding: 12vh 5vw 5vh 5vw;
   align-items: center;
 }
-main #about #article_video article img {
+#about #article_video article img {
   height: 25px;
   width: auto;
 }
-main #about #article_video article .topic_of_article {
+#about #article_video article .topic_of_article {
   text-transform: uppercase;
   font-size: 25px;
   letter-spacing: 0.1em;
   padding-bottom: 2vh;
 }
-main #about #article_video article .topic_of_article .pizza {
+#about #article_video article .topic_of_article .pizza {
   color: rgb(223, 183, 62);
 }
-main #about #article_video article p {
+#about #article_video article p {
   color: rgba(115, 115, 115, 0.985);
   font-size: 22px;
   line-height: 25px;
 }
 
 #contacnt {
-  width: 100vw;
   height: 90vh;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.985);
 }
 #contacnt iframe {
   height: 90vh;
 }
 #contacnt .contact_us {
-  background-color: rgba(0, 0, 0, 0.985);
   padding: 10vh 13vw;
 }
 #contacnt .contact_us .topic {
   color: rgba(255, 255, 255, 0.966);
   font-size: 23px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.1em;
 }
 #contacnt .contact_us .input_name {
-  width: 30vw;
+  width: 35vw;
   background-color: rgba(0, 0, 0, 0.985);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.966);
-  border-top-color: rgba(0, 0, 0, 0.985);
-  border-left-color: rgba(0, 0, 0, 0.985);
-  border-right-color: rgba(0, 0, 0, 0.985);
-  padding: 2vh 0;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.966);
+  color: rgba(128, 128, 128, 0.966);
+  margin-bottom: 2vh;
 }
 #contacnt .contact_us label {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
   color: rgba(255, 255, 255, 0.966);
+}
+#contacnt .contact_us textarea {
+  background-color: rgba(0, 0, 0, 0.985);
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.966);
+  padding: 3vh 0;
+  width: 35vw;
+  color: rgba(128, 128, 128, 0.966);
+}
+#contacnt .contact_us .send {
+  margin-top: 4vh;
+  height: 7vh;
+  width: 6vw;
+  background-color: rgb(223, 183, 62);
+  border: none;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+}
+#contacnt .contact_us .send:hover {
+  cursor: pointer;
+}
+#contacnt .contact_us .error {
+  display: none;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+  color: red;
+}
+
+main {
+  width: 100vw;
+}
+
+footer {
+  width: 100vw;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.985);
+}
+footer .footer_blocks {
+  display: flex;
+  padding: 10vh 10vw 1vh 10vw;
+}
+footer .footer_blocks .block1,
+footer .footer_blocks .block4 {
+  width: 15vw;
+}
+footer .footer_blocks .block1 {
+  margin: 0;
+  padding: 0 2vw 0 0;
+}
+footer .footer_blocks .block1 h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.966);
+  padding-bottom: 4vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 10vw;
+}
+footer .footer_blocks .block1 h3:hover {
+  cursor: pointer;
+}
+footer .footer_blocks .block_question1 {
+  padding-bottom: 3vh;
+}
+footer .footer_blocks .block_question1 img {
+  padding-right: 1vw;
+}
+footer .footer_blocks .block2 {
+  margin: 0;
+  padding: 0 2vw 0 0;
+}
+footer .footer_blocks .block2 h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.966);
+  padding-bottom: 4vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 10vw;
+}
+footer .footer_blocks .block2 h3:hover {
+  cursor: pointer;
+}
+footer .footer_blocks .block_question2 {
+  padding-bottom: 3vh;
+}
+footer .footer_blocks .block_question2 img {
+  padding-right: 1vw;
+}
+footer .footer_blocks .block3 {
+  margin: 0;
+  padding: 0 2vw 0 0;
+}
+footer .footer_blocks .block3 h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.966);
+  padding-bottom: 4vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 10vw;
+}
+footer .footer_blocks .block3 h3:hover {
+  cursor: pointer;
+}
+footer .footer_blocks .block_question3 {
+  padding-bottom: 3vh;
+}
+footer .footer_blocks .block_question3 img {
+  padding-right: 1vw;
+}
+footer .footer_blocks .block4 {
+  margin: 0;
+  padding: 0 2vw 0 0;
+}
+footer .footer_blocks .block4 h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.966);
+  padding-bottom: 4vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 10vw;
+}
+footer .footer_blocks .block4 h3:hover {
+  cursor: pointer;
+}
+footer .footer_blocks .block_question4 {
+  padding-bottom: 3vh;
+}
+footer .footer_blocks .block_question4 img {
+  padding-right: 1vw;
+}
+footer .block2 {
+  display: grid;
+  grid-template-columns: 1fr, 3fr;
+  grid-template-rows: 1fr 2fr;
+  width: 30vw;
+  align-items: center;
+}
+footer .block2 h3 {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  padding-bottom: 1vh;
+}
+footer .block2 .footer_img {
+  padding: 1vh 1vw 0 0;
+  height: 13vh;
+  width: 10vw;
+  grid-column: 1/2;
+}
+footer .block2 .discrabe {
+  grid-column: 2/3;
+}
+footer .block2 .article:hover {
+  cursor: pointer;
+}
+footer .block2 span {
+  color: rgba(153, 153, 153, 0.966);
+}
+footer .block2 .date {
+  margin-top: 2vh;
+}
+footer .block2 .date .message:hover {
+  cursor: pointer;
+}
+footer .mini_img {
+  width: auto;
+  height: 15px;
+  color: rgba(153, 153, 153, 0.966);
+}
+footer p {
+  margin: 0;
+  color: rgba(153, 153, 153, 0.966);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+footer h5 {
+  color: rgba(153, 153, 153, 0.966);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+footer h5:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+footer span {
+  color: rgba(153, 153, 153, 0.966);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+footer .social_networks {
+  padding-left: 10vw;
+}
+footer .social_networks img {
+  height: 20px;
+  margin: 0;
+}
+footer .social_networks img:hover {
+  cursor: pointer;
+}
+footer .copyright {
+  padding-top: 20vh;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
 }
 
 body {

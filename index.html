@@ -20,12 +20,12 @@
                  <div id="delicous">delicous</div>
             </div>
             <li id="menu_top">
-            <ul class="menu_top1 home">Home</ul>
-            <ul class="menu_top2">Menu</ul>
-            <ul class="menu_top3">Services</ul>
-            <ul class="menu_top4">Blog</ul>
-            <ul class="menu_top5">About</ul>
-            <ul class="menu_top6">Contact</ul>
+            <ul id="home_btn" class="menu_top1 home">Home</ul>
+            <ul id="menu_btn" class="menu_top2">Menu</ul>
+            <ul id="services_btn" class="menu_top3">Services</ul>
+            <ul id="blog_btn" class="menu_top4">Blog</ul>
+            <ul id="about_btn" class="menu_top5">About</ul>
+            <ul id="contact_btn" class="menu_top6">Contact</ul>
             </li>
         </div>
     <div id="header1">
@@ -417,24 +417,80 @@
            <div class="contact_us">
             <p class="topic">Contact Us</p>
             <form>
-                <label  for="first name">First name
-                    <input class="input_name" name="first name" type="text" min="4" required>
+                <label  for="first name">First name<br>
+                    <input class="input_name" name="first name" type="text" minlength="4" required>
+                    <span class="error">minimum number of characters is 4</span>
                 </label><br>
-                <label for="last name">Last name
-                    <input class="input_name" name="last name" type="text" min="4" required>
+                <label for="last name">Last name <br>
+                    <input class="input_name" name="last name" type="text" minlength="4" required>
+                <span class="error">minimum number of characters is 4</span>
                 </label><br>
-                <label for="message">Message
-                <textarea name="message" cols="30" rows="1" minlength="10"></textarea>
+                <label for="message">Message<br>
+                    <textarea name="message" cols="70" rows="1" minlength="10"></textarea>
+                <span class="error">minimum number of characters is 10</span>
                 </label><br>
-                <label for="submit">Send
-                    <input type="submit">
+                    <input class="send" type="submit" value="Send">
                 </label>
             </form>
            </div>
         </div>
         
     </main>
-    <footer></footer>
+    <footer> 
+    <div class="footer_blocks">
+        <div class="block1">
+            <h3>about us</h3>
+            <p>Far far away, behind the world mountains far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+        <div class="block2">
+            <h3>recent blog</h3>
+
+            <img class="footer_img one" src="foto/image_1.jpg" alt="pasta">
+        <div class="discrabe_one">
+            <p class="article one">Even the all-powerful Pointing has no control about</p>
+        <div class="date one">
+            <img class="mini_img" src="foto/calendar-icon.png" alt="calendar"><span> Sep 18,2022 </span>
+            <img class="mini_img" src="foto/human-icon-white.png" alt="admin"><span> Admin </span>
+            <img class="mini_img message" src="foto/message-icon-white.png" alt="message"><span> 3 </span>
+        </div>
+        </div>
+            <img class="footer_img two" src="foto/image_2.jpg" alt="pasta">
+            <div class="discrabe_two">
+            <p class="article two">Even the all-powerful Pointing has no control about</p>
+            <div class="date two">
+                <img class="mini_img" src="foto/calendar-icon.png" alt="calendar"> <span> Now 8,2022 </span>
+              <img class="mini_img" src="foto/human-icon-white.png" alt="admin"> <span> Admin </span>
+              <img class="mini_img message" src="foto/message-icon-white.png" alt="message"> <span> 8 </span>
+              </div>
+            </div>
+        </div>
+        <div class="block3">
+            <h3>services</h3>
+            <h5>Cooked</h5>
+            <h5>Deliver</h5>
+            <h5>Quality Foods</h5>
+            <h5>Mixed</h5>
+        </div>
+        <div class="block4">
+            <h3>have a questions?</h3>
+            <div class="block_question1">
+                <img class="mini_img" src="foto/location-pin_white.png" alt="location"> <span> 203 Face St. Mountain Viev, San Francisco, California, USA</span>
+            </div>
+            <div class="block_question2">
+                <img class="mini_img" src="foto/phone_white.png" alt="phone"><span> +2 325 1234 478</span>
+            </div>
+            <div class="block_question3">
+                <img class="mini_img" src="foto/envelope_white.png" alt="mail"><span> info@yourdomain.com</span>
+            </div>
+            </div>
+    </div>
+<div class="social_networks">
+            <img class="mini_img" src="foto/twitter-white.png" alt="twitter">
+            <img class="mini_img" src="foto/facebook_white.png" alt="facebook">
+            <img class="mini_img" src="foto/instagram_white.png" alt="instagram">
+        </div>
+        <p class="copyright">Copyright &copy 2022 All rights are reserved | This template made with <i class="fa-solid fa-heart"></i> by Colorlib</p>
+    </footer>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>

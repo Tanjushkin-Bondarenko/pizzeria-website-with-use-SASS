@@ -1,9 +1,6 @@
-main{
-    height: 90vh;
-    width: 100vw;
     #services{
+            height: 90vh;
         background-image: url('bg/food.png');
-        
         .services_name{
              @extend %name;
             color: $color1;
@@ -48,6 +45,7 @@ main{
         }
     }
     #blog{
+         height: 90vh;
         @extend %background;
         .blog_name{
              @extend %name;
@@ -99,4 +97,4 @@ main{
        }
 
     }
-}
+

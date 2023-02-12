@@ -1,7 +1,5 @@
-main{
-    width: 100vw;
-    height: 100vh;
     #about{
+            height: 90vh;
         @extend %background;
         .contacts_info{
             background-color: $color1;
@@ -68,39 +66,67 @@ main{
 } }
 }
 }
-}
+
 #contacnt{
-    width: 100vw;
     height: 90vh;
     display: flex;
-
+background-color: $color1;
     iframe{
         height: 90vh;
     }
       .contact_us{
-    background-color: $color1;
     padding: 10vh 13vw;
   .topic{
     color: $color3;
     font-size: calc($font-size + 3px);
     font-family: $font2;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 0.1em;
-
+    
   }
   .input_name {
-    width: 30vw;
+    width: 35vw;
     background-color: $color1;
-    border-bottom: 1px solid $color3;
-    border-top-color:  $color1;
-    border-left-color: $color1;
-    border-right-color:  $color1;
-    padding: 2vh 0;
+   border: none;
+   border-bottom: 1px solid darken($color3, $amount: 50%);
+    color: darken($color3, $amount: 50%);
+    margin-bottom: 2vh;
    
   }
   label{
+    font-size: $font-size;
+    font-weight: 100;
+    font-family: $font2;
      color: $color3;
   }
-      }
-
+  textarea{
+background-color: $color1;
+border: none;
+border-bottom: 1px solid darken($color3, $amount: 50%);
+padding: 3vh 0;
+width: 35vw;
+color: darken($color3, $amount: 50%);
+  }
+.send{
+margin-top: 4vh;
+height: 7vh;
+width: 6vw;
+background-color: $color2;
+border: none;
+ font-size: $font-size;
+ font-weight: 100;
+ font-family: $font2;
+ &:hover{
+    cursor: pointer;
+ }
+}  
+.error{
+    display: none;
+    font-size: calc($font-size - 3px);
+    font-weight: 100;
+    font-family: $font2;
+    color: red;
 }
+}
+}
+

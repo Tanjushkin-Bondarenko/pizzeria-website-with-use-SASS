@@ -1,11 +1,11 @@
-header #header3 .block_header, header #header1 .block_header {
+section #section3 .block_section, section #section1 .block_section {
   justify-self: end;
   text-align: end;
-  padding-right: 10px;
+  padding-right: 2vw;
   grid-row: 1/2;
 }
 
-header #header3 .block_header h2, header #header2 .block_header h2, header #header1 .block_header h2 {
+section #section3 .block_section h2, section #section2 .block_section h2, section #section1 .block_section h2 {
   font-family: "Josefin Sans", sans-serif;
   color: rgba(255, 255, 255, 0.966);
   font-variant: small-caps;
@@ -15,7 +15,7 @@ header #header3 .block_header h2, header #header2 .block_header h2, header #head
   font-size: 52px;
 }
 
-header #header3 .block_header .welcome, header #header2 .block_header .cranchy, header #header1 .block_header .header_delicous {
+section #section3 .block_section .welcome, section #section2 .block_section .cranchy, section #section1 .block_section .section_delicous {
   font-weight: lighter;
   font-family: "Nothing You Could Do", cursive;
   color: rgb(223, 183, 62);
@@ -24,44 +24,44 @@ header #header3 .block_header .welcome, header #header2 .block_header .cranchy, 
   font-style: oblique;
 }
 
-header #header3 .block_header .description, header #header2 .block_header .description, header #header1 .block_header .description {
-  margin-top: 20px;
+section #section3 .block_section .description, section #section2 .block_section .description, section #section1 .block_section .description {
+  margin-top: 7vh;
   color: rgba(255, 255, 255, 0.966);
-  width: 550px;
+  width: 46vw;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   letter-spacing: 0.1em;
   font-weight: 100;
 }
 
-header #header3 .block_header button, header #header2 .block_header button, header #header1 .block_header button {
+section #section3 .block_section button, section #section2 .block_section button, section #section1 .block_section button {
   padding: 20px;
   font-size: 20px;
-  width: 200px;
-  margin: 100px 1px 0 1px;
+  width: 12vw;
+  margin: 10vh 1px 0 1px;
 }
-header #header3 .block_header button:hover, header #header2 .block_header button:hover, header #header1 .block_header button:hover {
+section #section3 .block_section button:hover, section #section2 .block_section button:hover, section #section1 .block_section button:hover {
   cursor: pointer;
 }
 
-header #header3 .block_header .order_now, header #header2 .block_header .order_now, header #header1 .block_header .order_now {
+section #section3 .block_section .order_now, section #section2 .block_section .order_now, section #section1 .block_section .order_now {
   background-color: rgb(223, 183, 62);
   border: 0px solid;
 }
 
-header #header3 .block_header .view, header #header2 .block_header .view, header #header1 .block_header .view {
+section #section3 .block_section .view, section #section2 .block_section .view, section #section1 .block_section .view {
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.966);
   border: 1px solid rgb(238, 235, 235);
 }
 
-header #header2 .header_img, header #header1 .header_img {
+section #section2 .section_img, section #section1 .section_img {
   grid-row: 1/2;
   max-width: auto;
   height: 65vh;
 }
 
-header #header3 .dot, header #header2 .dot, header #header1 .dot {
+section #section3 .dot, section #section2 .dot, section #section1 .dot {
   font-size: 15px;
   color: rgba(217, 217, 217, 0.966);
   padding-bottom: 2%;
@@ -71,23 +71,29 @@ header #header3 .dot, header #header2 .dot, header #header1 .dot {
   justify-items: center;
 }
 
-header #header3 .dot i, header #header2 .dot i, header #header1 .dot i {
+section #section3 .dot i, section #section2 .dot i, section #section1 .dot i {
   border: 2px solid white;
   border-radius: 50%;
   padding: 2px;
   margin-right: 3px;
 }
-header #header3 .dot i:hover, header #header2 .dot i:hover, header #header1 .dot i:hover {
+section #section3 .dot i:hover, section #section2 .dot i:hover, section #section1 .dot i:hover {
   cursor: pointer;
 }
 
-#about, #blog, #menu_pricing, #menu_hot_meals, #home2 {
+#about, #blog, #menu_pricing, #menu_hot_meals,
+#menu_drinks,
+#menu_burgers,
+#menu_pasta, #home2 {
   background-image: url("bg/bg_4.jpg");
-  background-size: 100% 100vh;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-#blog .blog_name, #services .services_name, #menu_pricing .menu2_name, #menu_hot_meals .menu1_name {
+#blog .blog_name, #services .services_name, #menu_pricing .menu2_name, #menu_hot_meals .menu1_name,
+#menu_drinks .menu1_name,
+#menu_burgers .menu1_name,
+#menu_pasta .menu1_name {
   margin: 0;
   color: rgba(255, 255, 255, 0.966);
   font-family: "Josefin Sans", sans-serif;
@@ -99,7 +105,10 @@ header #header3 .dot i:hover, header #header2 .dot i:hover, header #header1 .dot
   letter-spacing: 0.1em;
 }
 
-#about #article_video article .topic_of_article, #blog .blog_menu .name, #services .services_menu .name, #menu_pricing .menu2_blocks .name, #menu_hot_meals .menu_block h3, #home2 .home2_block_pizza h3 {
+#about #article_video article .topic_of_article, #blog .blog_menu .name, #services .services_menu .name, #menu_pricing .menu2_blocks .order_name, #menu_hot_meals .menu_block h3,
+#menu_drinks .menu_block h3,
+#menu_burgers .menu_block h3,
+#menu_pasta .menu_block h3, #home2 .home2_block_pizza h3 {
   margin: 0;
   color: rgba(255, 255, 255, 0.966);
   text-align: center;
@@ -107,7 +116,10 @@ header #header3 .dot i:hover, header #header2 .dot i:hover, header #header1 .dot
   font-size: 20px;
 }
 
-#menu_hot_meals .menu_block .menu1_order, #home2 .home2_add {
+#menu_hot_meals .menu_block .menu1_order,
+#menu_drinks .menu_block .menu1_order,
+#menu_burgers .menu_block .menu1_order,
+#menu_pasta .menu_block .menu1_order, #home2 .order {
   border: 1px solid rgb(238, 235, 235);
   background-color: hsla(208deg, 100%, 100%, 0);
   color: rgba(255, 255, 255, 0.966);
@@ -116,18 +128,27 @@ header #header3 .dot i:hover, header #header2 .dot i:hover, header #header1 .dot
   font-size: 17px;
   margin-left: 30%;
 }
-#menu_hot_meals .menu_block .menu1_order:hover, #home2 .home2_add:hover {
+#menu_hot_meals .menu_block .menu1_order:hover,
+#menu_drinks .menu_block .menu1_order:hover,
+#menu_burgers .menu_block .menu1_order:hover,
+#menu_pasta .menu_block .menu1_order:hover, #home2 .order:hover {
   cursor: pointer;
 }
 
-#menu_pricing .menu2_blocks .price, #menu_hot_meals .menu_block .menu1_price, #home2 .home2_block_pizza .home2_price {
+#menu_pricing .menu2_blocks .order_price, #menu_hot_meals .menu_block .menu1_price,
+#menu_drinks .menu_block .menu1_price,
+#menu_burgers .menu_block .menu1_price,
+#menu_pasta .menu_block .menu1_price, #home2 .home2_block_pizza .home2_price {
   margin: 0;
   color: rgb(223, 183, 62);
   font-size: 16px;
 }
 
-#blog .blog_description, #services .services_description, #menu_pricing .menu2_description, #menu_hot_meals .menu1_description {
-  padding: 10px 35vw 50px 35vw;
+#blog .blog_description, #services .services_description, #menu_pricing .menu2_description, #menu_hot_meals .menu1_description,
+#menu_drinks .menu1_description,
+#menu_burgers .menu1_description,
+#menu_pasta .menu1_description {
+  padding: 2vh 35vw 8vh 35vw;
   color: rgba(140, 140, 140, 0.966);
   font-size: 17px;
   font-family: "Josefin Sans", sans-serif;
@@ -135,7 +156,7 @@ header #header3 .dot i:hover, header #header2 .dot i:hover, header #header1 .dot
   margin: 0;
 }
 
-header #header_top {
+header {
   height: 10vh;
   width: 100vw;
   background: rgb(0, 0, 0);
@@ -143,21 +164,21 @@ header #header_top {
   grid-template-columns: repeat(2, 2fr) repeat(2, 4fr) 2fr;
   position: fixed;
 }
-header #header_top #name_block {
+header #name_block {
   justify-items: end;
   align-items: stretch;
   grid-column: 2/3;
   display: grid;
   padding-left: 130px;
 }
-header #header_top #name_block .img_name {
+header #name_block .img_name {
   padding-top: 7px;
   grid-column: 1/2;
   grid-row: 1/2;
   width: 32px;
   height: auto;
 }
-header #header_top #name_block #name {
+header #name_block #name {
   grid-column: 2/3;
   grid-row: 1/2;
   color: rgba(255, 255, 255, 0.966);
@@ -166,7 +187,7 @@ header #header_top #name_block #name {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
 }
-header #header_top #name_block #delicous {
+header #name_block #delicous {
   margin: 0;
   color: rgb(223, 183, 62);
   grid-column: 1/3;
@@ -177,13 +198,13 @@ header #header_top #name_block #delicous {
   font-weight: lighter;
   font-size: 18px;
 }
-header #header_top #menu_top {
+header #menu_top {
   align-content: space-around;
   grid-column: 4/5;
   display: grid;
   color: rgba(255, 255, 255, 0.966);
 }
-header #header_top #menu_top .menu_top1 {
+header #menu_top .menu_top1 {
   font-size: 18px;
   font-weight: 400;
   grid-row: 1/2;
@@ -191,10 +212,10 @@ header #header_top #menu_top .menu_top1 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
-header #header_top #menu_top .menu_top1:hover {
+header #menu_top .menu_top1:hover {
   cursor: pointer;
 }
-header #header_top #menu_top .menu_top2 {
+header #menu_top .menu_top2 {
   font-size: 18px;
   font-weight: 400;
   grid-row: 1/2;
@@ -202,10 +223,10 @@ header #header_top #menu_top .menu_top2 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
-header #header_top #menu_top .menu_top2:hover {
+header #menu_top .menu_top2:hover {
   cursor: pointer;
 }
-header #header_top #menu_top .menu_top3 {
+header #menu_top .menu_top3 {
   font-size: 18px;
   font-weight: 400;
   grid-row: 1/2;
@@ -213,10 +234,10 @@ header #header_top #menu_top .menu_top3 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
-header #header_top #menu_top .menu_top3:hover {
+header #menu_top .menu_top3:hover {
   cursor: pointer;
 }
-header #header_top #menu_top .menu_top4 {
+header #menu_top .menu_top4 {
   font-size: 18px;
   font-weight: 400;
   grid-row: 1/2;
@@ -224,10 +245,10 @@ header #header_top #menu_top .menu_top4 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
-header #header_top #menu_top .menu_top4:hover {
+header #menu_top .menu_top4:hover {
   cursor: pointer;
 }
-header #header_top #menu_top .menu_top5 {
+header #menu_top .menu_top5 {
   font-size: 18px;
   font-weight: 400;
   grid-row: 1/2;
@@ -235,10 +256,10 @@ header #header_top #menu_top .menu_top5 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
-header #header_top #menu_top .menu_top5:hover {
+header #menu_top .menu_top5:hover {
   cursor: pointer;
 }
-header #header_top #menu_top .menu_top6 {
+header #menu_top .menu_top6 {
   font-size: 18px;
   font-weight: 400;
   grid-row: 1/2;
@@ -246,69 +267,100 @@ header #header_top #menu_top .menu_top6 {
   color: rgba(255, 255, 255, 0.966);
   font-family: "Poppins", sans-serif;
 }
-header #header_top #menu_top .menu_top6:hover {
+header #menu_top .menu_top6:hover {
   cursor: pointer;
 }
-header #header_top .home {
+header #menu_top .menu_btn {
+  color: rgba(255, 255, 255, 0.966);
+  text-decoration: none;
+}
+header #menu_top:visited {
+  color: rgba(255, 255, 255, 0.966);
+}
+header #home_btn {
   color: rgb(223, 183, 62);
 }
-header #header1 {
+
+section {
+  padding-top: 10vh;
+  height: 90vh;
   width: 100vw;
-  height: 100vh;
+}
+section a {
+  text-decoration: none;
+}
+section #section1 {
+  width: 100%;
+  height: 90vh;
   background-image: url("bg/bg_1.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: grid;
-  align-content: center;
-  align-items: end;
-  justify-content: space-around;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 5fr 1fr;
 }
-header #header1 .block_header p {
+section #section1 .block_section p {
   margin: 0;
 }
-header #header1 .dot .first {
+section #section1 .block_section .description {
+  grid-column: 1/2;
+}
+section #section1 .block_section .order_now a {
+  color: rgba(0, 0, 0, 0.985);
+}
+section #section1 .block_section .view a {
+  color: rgba(255, 255, 255, 0.966);
+}
+section #section1 .dot .first {
   color: rgba(179, 179, 179, 0.966);
   border: 2px solid rgba(179, 179, 179, 0.966);
 }
-header #header2 {
-  height: 100vh;
+section #section2 {
+  height: 90vh;
   width: 100vw;
   background-image: url("bg/bg_1.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: grid;
   display: none;
-  align-content: center;
-  align-items: end;
-  justify-content: space-around;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 5fr 1fr;
 }
-header #header2 .block_header {
-  padding: 270px 0 0 10px;
+section #section2 .block_section {
+  padding-top: 5vh;
   text-align: start;
   justify-self: start;
+  align-items: center;
 }
-header #header2 .block_header p {
+section #section2 .block_section p {
   margin: 0;
 }
-header #header2 .header_img {
+section #section2 .block_section .order_now a {
+  color: rgba(0, 0, 0, 0.985);
+}
+section #section2 .block_section .view a {
+  color: rgba(255, 255, 255, 0.966);
+}
+section #section2 .section_img {
+  padding-top: 10vh;
   justify-self: end;
 }
-header #header2 .dot {
+section #section2 .dot {
   padding-left: 50vw;
   grid-column: 1/3;
 }
-header #header2 .dot .second {
+section #section2 .dot .second {
   color: rgba(179, 179, 179, 0.966);
   border: 2px solid rgba(179, 179, 179, 0.966);
 }
-header #header3 {
-  height: 80vh;
+section #section3 {
+  height: 90vh;
   width: 100vw;
-  padding-top: 20vh;
   background-image: url("bg/bg_3.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-size: cover;
   align-content: center;
   align-items: center;
@@ -316,26 +368,32 @@ header #header3 {
   grid-template-rows: 5fr 1fr;
   display: none;
 }
-header #header3 .block_header {
+section #section3 .block_section {
   grid-row: 1/2;
   text-align: center;
 }
-header #header3 .block_header p {
+section #section3 .block_section p {
   margin: 0;
 }
-header #header3 .block_header .description {
+section #section3 .block_section .description {
   padding-left: 0;
   width: 800px;
 }
-header #header3 .block_header button {
+section #section3 .block_section button {
   margin-bottom: 85px;
 }
-header #header3 .dot {
+section #section3 .block_section .order_now a {
+  color: rgba(0, 0, 0, 0.985);
+}
+section #section3 .block_section .view a {
+  color: rgba(255, 255, 255, 0.966);
+}
+section #section3 .dot {
   grid-row: 2/3;
   align-items: center;
   padding: 0;
 }
-header #header3 .dot .third {
+section #section3 .dot .third {
   color: rgba(179, 179, 179, 0.966);
   border: 2px solid rgba(179, 179, 179, 0.966);
 }
@@ -356,28 +414,28 @@ header #header3 .dot .third {
 }
 #home1 .home1_img_block .home_img1 {
   width: 25vw;
-  height: 43vh;
+  height: 50vh;
   grid-row: 1/2;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 #home1 .home1_img_block .home_img2 {
   width: 25vw;
-  height: 43vh;
+  height: 50vh;
   grid-row: 1/2;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 #home1 .home1_img_block .home_img3 {
   width: 25vw;
-  height: 43vh;
+  height: 50vh;
   grid-row: 1/2;
   grid-column-start: 3;
   grid-column-end: 4;
 }
 #home1 .home1_img_block .home_img4 {
   width: 25vw;
-  height: 43vh;
+  height: 50vh;
   grid-row: 1/2;
   grid-column-start: 4;
   grid-column-end: 5;
@@ -436,7 +494,7 @@ header #header3 .dot .third {
 }
 
 #home2 {
-  height: 90vh;
+  height: 98vh;
   display: grid;
   grid-template-rows: 1fr 5fr;
   grid-template-columns: repeat(3, 2fr);
@@ -444,11 +502,12 @@ header #header3 .dot .third {
 #home2 .home2_img {
   grid-column: 1/2;
   width: 40vw;
-  height: 75vh;
+  height: 85vh;
   grid-row: 1/3;
   margin-right: 2vw;
 }
 #home2 .block_btn {
+  padding: 10vh 0 5vh 0;
   height: 10vh;
   grid-column: 2/3;
   grid-row: 1/2;
@@ -470,6 +529,10 @@ header #header3 .dot .third {
 #home2 .block_btn .home2_btn1:hover {
   cursor: pointer;
 }
+#home2 .block_btn .home2_btn1 a {
+  color: rgb(223, 183, 62);
+  text-decoration: none;
+}
 #home2 .block_btn .home2_btn2 {
   height: 38px;
   color: rgb(223, 183, 62);
@@ -484,6 +547,10 @@ header #header3 .dot .third {
 }
 #home2 .block_btn .home2_btn2:hover {
   cursor: pointer;
+}
+#home2 .block_btn .home2_btn2 a {
+  color: rgb(223, 183, 62);
+  text-decoration: none;
 }
 #home2 .block_btn .home2_btn3 {
   height: 38px;
@@ -500,6 +567,10 @@ header #header3 .dot .third {
 #home2 .block_btn .home2_btn3:hover {
   cursor: pointer;
 }
+#home2 .block_btn .home2_btn3 a {
+  color: rgb(223, 183, 62);
+  text-decoration: none;
+}
 #home2 .block_btn .home2_btn4 {
   height: 38px;
   color: rgb(223, 183, 62);
@@ -515,20 +586,18 @@ header #header3 .dot .third {
 #home2 .block_btn .home2_btn4:hover {
   cursor: pointer;
 }
-#home2 .block_btn .pizza {
-  color: rgba(0, 0, 0, 0.985);
-  background-color: rgb(223, 183, 62);
+#home2 .block_btn .home2_btn4 a {
+  color: rgb(223, 183, 62);
+  text-decoration: none;
 }
 #home2 .home2_block_pizza {
-  height: 80vh;
   grid-column: 2/4;
   grid-row: 2/4;
   display: grid;
-  height: 70vh;
   grid-template-columns: repeat(3, 2fr);
 }
 #home2 .home2_block_pizza .home2_block_pizza1 {
-  height: 70vh;
+  height: 75vh;
   grid-column-start: 1;
   grid-column-end: 2;
   display: grid;
@@ -543,7 +612,7 @@ header #header3 .dot .third {
   grid-row: 2/3;
 }
 #home2 .home2_block_pizza .home2_block_pizza2 {
-  height: 70vh;
+  height: 75vh;
   grid-column-start: 2;
   grid-column-end: 3;
   display: grid;
@@ -558,7 +627,7 @@ header #header3 .dot .third {
   grid-row: 2/3;
 }
 #home2 .home2_block_pizza .home2_block_pizza3 {
-  height: 70vh;
+  height: 75vh;
   grid-column-start: 3;
   grid-column-end: 4;
   display: grid;
@@ -583,93 +652,110 @@ header #header3 .dot .third {
   margin: 0;
   color: rgba(153, 153, 153, 0.966);
   text-align: center;
-  padding: 0px 20px 0 0;
+  padding: 10px 20px 10px 0;
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   line-height: 25px;
 }
-#menu_hot_meals {
-  height: 90vh;
+#menu_hot_meals,
+#menu_drinks,
+#menu_burgers,
+#menu_pasta {
+  height: 98vh;
 }
-#menu_hot_meals .menu1_name {
-  padding: 40px 0 15px 0;
+#menu_hot_meals .menu1_name,
+#menu_drinks .menu1_name,
+#menu_burgers .menu1_name,
+#menu_pasta .menu1_name {
+  padding: 12vh 0 6vh 0;
 }
-#menu_hot_meals .menu_block {
+#menu_hot_meals .menu_block,
+#menu_drinks .menu_block,
+#menu_burgers .menu_block,
+#menu_pasta .menu_block {
   display: grid;
   grid-template-columns: repeat(6, 2fr);
   grid-template-rows: repeat(2, 5fr);
   align-items: end;
 }
-#menu_hot_meals .menu_block img {
+#menu_hot_meals .menu_block img,
+#menu_drinks .menu_block img,
+#menu_burgers .menu_block img,
+#menu_pasta .menu_block img {
   width: 16.5vw;
-  height: 210px;
+  height: 29vh;
 }
-#menu_hot_meals .menu_block h3 {
+#menu_hot_meals .menu_block h3,
+#menu_drinks .menu_block h3,
+#menu_burgers .menu_block h3,
+#menu_pasta .menu_block h3 {
   text-align: center;
 }
-#menu_hot_meals .menu_block .menu1_order {
+#menu_hot_meals .menu_block .menu1_order,
+#menu_drinks .menu_block .menu1_order,
+#menu_burgers .menu_block .menu1_order,
+#menu_pasta .menu_block .menu1_order {
   height: 30px;
   font-size: 15px;
   margin-left: 12%;
-  height: 30px;
 }
-#menu_hot_meals .menu_block .menu_descr1 {
+#menu_hot_meals .menu_block .menu_descr1,
+#menu_drinks .menu_block .menu_descr1,
+#menu_burgers .menu_block .menu_descr1,
+#menu_pasta .menu_block .menu_descr1 {
   color: rgba(128, 128, 128, 0.966);
   padding: 14px;
   width: 13vw;
 }
-#menu_hot_meals .menu_block .menu_foto1 {
-  width: 16.5vw;
-  height: 210px;
-}
-#menu_hot_meals .menu_block .menu_descr2 {
+#menu_hot_meals .menu_block .menu_descr2,
+#menu_drinks .menu_block .menu_descr2,
+#menu_burgers .menu_block .menu_descr2,
+#menu_pasta .menu_block .menu_descr2 {
   color: rgba(128, 128, 128, 0.966);
   padding: 14px;
   width: 13vw;
 }
-#menu_hot_meals .menu_block .menu_foto2 {
-  width: 16.5vw;
-  height: 210px;
-}
-#menu_hot_meals .menu_block .menu_descr3 {
+#menu_hot_meals .menu_block .menu_descr3,
+#menu_drinks .menu_block .menu_descr3,
+#menu_burgers .menu_block .menu_descr3,
+#menu_pasta .menu_block .menu_descr3 {
   color: rgba(128, 128, 128, 0.966);
   padding: 14px;
   width: 13vw;
 }
-#menu_hot_meals .menu_block .menu_foto3 {
-  width: 16.5vw;
-  height: 210px;
-}
-#menu_hot_meals .menu_block .menu_descr4 {
+#menu_hot_meals .menu_block .menu_descr4,
+#menu_drinks .menu_block .menu_descr4,
+#menu_burgers .menu_block .menu_descr4,
+#menu_pasta .menu_block .menu_descr4 {
   color: rgba(128, 128, 128, 0.966);
   padding: 14px;
   width: 13vw;
 }
-#menu_hot_meals .menu_block .menu_foto4 {
-  width: 16.5vw;
-  height: 210px;
-}
-#menu_hot_meals .menu_block .menu_descr5 {
+#menu_hot_meals .menu_block .menu_descr5,
+#menu_drinks .menu_block .menu_descr5,
+#menu_burgers .menu_block .menu_descr5,
+#menu_pasta .menu_block .menu_descr5 {
   color: rgba(128, 128, 128, 0.966);
   padding: 14px;
   width: 13vw;
 }
-#menu_hot_meals .menu_block .menu_foto5 {
-  width: 16.5vw;
-  height: 210px;
-}
-#menu_hot_meals .menu_block .menu_descr6 {
+#menu_hot_meals .menu_block .menu_descr6,
+#menu_drinks .menu_block .menu_descr6,
+#menu_burgers .menu_block .menu_descr6,
+#menu_pasta .menu_block .menu_descr6 {
   color: rgba(128, 128, 128, 0.966);
   padding: 14px;
   width: 13vw;
 }
-#menu_hot_meals .menu_block .menu_foto6 {
-  width: 16.5vw;
-  height: 210px;
+
+#menu_drinks,
+#menu_burgers,
+#menu_pasta {
+  display: none;
 }
 
 #menu_pricing {
-  height: 90vh;
+  height: 98vh;
 }
 #menu_pricing .romb {
   display: inline-grid;
@@ -685,7 +771,7 @@ header #header3 .dot .third {
   background-color: rgb(223, 183, 62);
 }
 #menu_pricing .menu2_description {
-  padding-bottom: 90px;
+  padding-bottom: 7vh;
   font-size: 15px;
 }
 #menu_pricing .menu2_blocks {
@@ -697,46 +783,71 @@ header #header3 .dot .third {
 #menu_pricing .menu2_blocks .menu2_block1 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
 #menu_pricing .menu2_blocks .menu2_block2 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
 #menu_pricing .menu2_blocks .menu2_block3 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
 #menu_pricing .menu2_blocks .menu2_block4 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
 #menu_pricing .menu2_blocks .menu2_block5 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
 #menu_pricing .menu2_blocks .menu2_block6 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
 #menu_pricing .menu2_blocks .menu2_block7 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
 #menu_pricing .menu2_blocks .menu2_block8 {
   display: inline-grid;
   padding: 0.5vh 1vw;
+  grid-template-columns: 1fr 2fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
 }
-#menu_pricing .menu2_blocks .menu2_img {
-  width: 50px;
-  height: 60px;
+#menu_pricing .menu2_blocks .menu2_order {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  align-items: start;
+  border: 1px solid rgb(238, 235, 235);
+  background-color: hsla(208deg, 100%, 100%, 0);
+  color: rgba(255, 255, 255, 0.966);
+  height: 3vh;
+  font-size: 16px;
+  padding: 0 0.5vw 0 0.5vw;
+  margin: 0;
+  margin-top: -17px;
+  text-decoration: none;
+}
+#menu_pricing .menu2_blocks .menu2_order:hover {
+  cursor: pointer;
+}
+#menu_pricing .menu2_blocks .order_img {
+  width: 80px;
+  height: 80px;
   grid-row: 1/4;
   grid-column: 1/2;
   border: -1px solid hsla(0deg, 0%, 0%, 0);
@@ -750,9 +861,9 @@ header #header3 .dot .third {
   height: 0;
   border: none;
   border-bottom: 1px dashed rgb(223, 183, 62);
-  width: 16vw;
+  width: 13vw;
 }
-#menu_pricing .menu2_blocks .name {
+#menu_pricing .menu2_blocks .order_name {
   padding-top: 0;
   text-align: start;
   grid-row: 1/2;
@@ -760,13 +871,15 @@ header #header3 .dot .third {
   height: 13px;
   font-size: 16px;
   color: rgba(204, 204, 204, 0.966);
+  width: -moz-fit-content;
+  width: fit-content;
 }
-#menu_pricing .menu2_blocks .price {
-  justify-self: end;
+#menu_pricing .menu2_blocks .order_price {
+  justify-self: center;
   padding: 0;
   margin: 0;
-  grid-row: 1/3;
-  grid-column: 3/4;
+  grid-row: 1/2;
+  grid-column: 4/5;
 }
 #menu_pricing .menu2_blocks .discribe {
   grid-row: 1/3;
@@ -774,17 +887,18 @@ header #header3 .dot .third {
   margin: 0;
   color: rgba(102, 102, 102, 0.966);
   font-size: 15px;
-  padding-top: 15px;
-  width: 27vw;
+  padding-top: 2vh;
+  width: 20vw;
 }
 
 #services {
-  height: 90vh;
+  height: 98vh;
   background-image: url("bg/food.png");
 }
 #services .services_name {
   color: rgba(0, 0, 0, 0.985);
   font-weight: 100;
+  padding-top: 12vh;
 }
 #services .services_description {
   color: rgba(64, 64, 64, 0.985);
@@ -828,9 +942,6 @@ header #header3 .dot .third {
   font-family: "Poppins", sans-serif;
 }
 
-#blog {
-  height: 90vh;
-}
 #blog .blog_name {
   color: rgba(255, 255, 255, 0.966);
   font-weight: 300;
@@ -873,20 +984,24 @@ header #header3 .dot .third {
   color: rgba(115, 115, 115, 0.985);
   font-size: 14px;
   font-weight: 100;
+  padding-bottom: 5vh;
 }
 
 #about {
-  height: 90vh;
+  height: 100vh;
+  border-bottom: 5px solid rgb(223, 183, 62);
 }
 #about .contacts_info {
   background-color: rgba(0, 0, 0, 0.985);
   padding-left: 12vw;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #about .contacts_info .contacts_info1 {
-  height: 13vh;
   width: 17vw;
-  padding: 2vh 2vw;
+  padding: 12vh 0 0 3vw;
+  height: 15vh;
 }
 #about .contacts_info .contacts_info1 .icon {
   margin: 0;
@@ -907,9 +1022,9 @@ header #header3 .dot .third {
   font-size: 13px;
 }
 #about .contacts_info .contacts_info2 {
-  height: 13vh;
   width: 17vw;
-  padding: 2vh 2vw;
+  padding: 12vh 0 0 3vw;
+  height: 15vh;
 }
 #about .contacts_info .contacts_info2 .icon {
   margin: 0;
@@ -930,9 +1045,9 @@ header #header3 .dot .third {
   font-size: 13px;
 }
 #about .contacts_info .contacts_info3 {
-  height: 13vh;
   width: 17vw;
-  padding: 2vh 2vw;
+  padding: 12vh 0 0 3vw;
+  height: 15vh;
 }
 #about .contacts_info .contacts_info3 .icon {
   margin: 0;
@@ -953,9 +1068,9 @@ header #header3 .dot .third {
   font-size: 13px;
 }
 #about .contacts_info .contacts_info4 {
-  height: 13vh;
   width: 17vw;
-  padding: 2vh 2vw;
+  padding: 12vh 0 0 3vw;
+  height: 15vh;
 }
 #about .contacts_info .contacts_info4 .icon {
   margin: 0;
@@ -983,15 +1098,14 @@ header #header3 .dot .third {
 }
 #about #article_video {
   display: flex;
-  height: 70vh;
-  border-bottom: 5px solid rgb(223, 183, 62);
+  height: 72vh;
 }
 #about #article_video #video {
   margin: 0;
   width: 4000px;
 }
 #about #article_video article {
-  padding: 12vh 5vw 5vh 5vw;
+  padding: 12vh 5vw 7vh 5vw;
   align-items: center;
 }
 #about #article_video article img {
@@ -1056,7 +1170,7 @@ header #header3 .dot .third {
 #contacnt .contact_us .send {
   margin-top: 4vh;
   height: 7vh;
-  width: 6vw;
+  width: 8vw;
   background-color: rgb(223, 183, 62);
   border: none;
   font-size: 20px;
@@ -1066,16 +1180,99 @@ header #header3 .dot .third {
 #contacnt .contact_us .send:hover {
   cursor: pointer;
 }
-#contacnt .contact_us .error {
-  display: none;
-  font-size: 17px;
-  font-weight: 100;
-  font-family: "Josefin Sans", sans-serif;
-  color: red;
-}
 
 main {
   width: 100vw;
+}
+
+#order {
+  display: none;
+  flex-direction: column;
+  background-color: #e6c76a;
+  width: 100vw;
+}
+#order .head_order {
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10vh;
+}
+#order .head_order .name_of_order {
+  width: 90vw;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(89, 89, 89, 0.985);
+}
+#order .head_order .xmark {
+  width: 7vw;
+  color: rgba(89, 89, 89, 0.985);
+}
+#order .head_order .xmark:hover {
+  cursor: pointer;
+}
+#order #order_block {
+  padding-left: 5vw;
+  display: grid;
+}
+#order #to_order_btn {
+  width: 40vw;
+}
+#order .div_order {
+  height: 25vh;
+  display: grid;
+  width: 40vw;
+  grid-template-columns: 3fr 1fr;
+}
+#order .div_order .img_in_order {
+  width: auto;
+  height: 80px;
+  grid-column: 1/2;
+}
+#order .div_order .name_in_order {
+  margin: 0;
+  grid-column: 1/2;
+  color: rgba(89, 89, 89, 0.985);
+}
+#order .div_order .price_in_order {
+  grid-column: 1/2;
+  color: rgba(89, 89, 89, 0.985);
+}
+#order .div_order .xmark {
+  grid-column: 2/3;
+  color: rgba(89, 89, 89, 0.985);
+}
+#order .div_order .xmark:hover {
+  cursor: pointer;
+}
+#order form {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 3vh 0 0 5vw;
+}
+#order form input,
+#order form textarea {
+  padding-bottom: 3px;
+  width: 320px;
+  background-color: #e6c76a;
+  border: none;
+  border-bottom: 1px solid rgba(89, 89, 89, 0.985);
+}
+#order form .quantity {
+  grid-column: 1/2;
+  padding-bottom: 3vh;
+}
+#order form .quantity input {
+  width: 60px;
+  border: 1px solid rgba(89, 89, 89, 0.985);
+}
+#order form #order_button {
+  margin-top: 5vh;
+  padding: 7px;
+  border: 1px solid rgba(89, 89, 89, 0.985);
+  font-weight: 600;
 }
 
 footer {
@@ -1094,6 +1291,10 @@ footer .footer_blocks .block4 {
 footer .footer_blocks .block1 {
   margin: 0;
   padding: 0 2vw 0 0;
+}
+footer .footer_blocks .block1 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.966);
 }
 footer .footer_blocks .block1 h3 {
   margin: 0;
@@ -1118,6 +1319,10 @@ footer .footer_blocks .block2 {
   margin: 0;
   padding: 0 2vw 0 0;
 }
+footer .footer_blocks .block2 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.966);
+}
 footer .footer_blocks .block2 h3 {
   margin: 0;
   color: rgba(255, 255, 255, 0.966);
@@ -1141,6 +1346,10 @@ footer .footer_blocks .block3 {
   margin: 0;
   padding: 0 2vw 0 0;
 }
+footer .footer_blocks .block3 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.966);
+}
 footer .footer_blocks .block3 h3 {
   margin: 0;
   color: rgba(255, 255, 255, 0.966);
@@ -1163,6 +1372,10 @@ footer .footer_blocks .block_question3 img {
 footer .footer_blocks .block4 {
   margin: 0;
   padding: 0 2vw 0 0;
+}
+footer .footer_blocks .block4 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.966);
 }
 footer .footer_blocks .block4 h3 {
   margin: 0;
@@ -1204,17 +1417,12 @@ footer .block2 .footer_img {
 footer .block2 .discrabe {
   grid-column: 2/3;
 }
-footer .block2 .article:hover {
-  cursor: pointer;
-}
-footer .block2 span {
+footer .block2 span,
+footer .block2 time {
   color: rgba(153, 153, 153, 0.966);
 }
 footer .block2 .date {
   margin-top: 2vh;
-}
-footer .block2 .date .message:hover {
-  cursor: pointer;
 }
 footer .mini_img {
   width: auto;
@@ -1233,10 +1441,6 @@ footer h5 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   font-weight: 100;
-}
-footer h5:hover {
-  cursor: pointer;
-  font-weight: 600;
 }
 footer span {
   color: rgba(153, 153, 153, 0.966);
@@ -1261,6 +1465,994 @@ footer .copyright {
   font-size: 15px;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) 1fr;
+  }
+  header #name_block {
+    grid-column: 1/2;
+    padding-left: 50px;
+  }
+  header #name_block .img_name {
+    padding-top: 5px;
+    width: 20px;
+  }
+  header #name_block #name {
+    font-size: 20px;
+  }
+  header #name_block #delicous {
+    font-size: 15px;
+  }
+  header #menu_top {
+    grid-column: 3/5;
+  }
+  header #menu_top .menu_top1 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  header #menu_top .menu_top2 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  header #menu_top .menu_top3 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  header #menu_top .menu_top4 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  header #menu_top .menu_top5 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  header #menu_top .menu_top6 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  section #section1 .block_section h2 {
+    font-size: 38px;
+  }
+  section #section1 .block_section .section_delicous {
+    font-size: 27px;
+  }
+  section #section1 .block_section .description {
+    width: 50vw;
+    margin-top: 5vh;
+    font-size: 17px;
+  }
+  section #section1 .block_section button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  section #section1 .section_img {
+    height: 45vh;
+  }
+  section #section2 .block_section h2 {
+    font-size: 38px;
+  }
+  section #section2 .block_section .cranchy {
+    font-size: 27px;
+  }
+  section #section2 .block_section .description {
+    width: 40vw;
+    margin-top: 5vh;
+    font-size: 17px;
+  }
+  section #section2 .block_section button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  section #section2 .section_img {
+    height: 45vh;
+  }
+  section #section3 {
+    background-image: url("/style/bg/bg_3small.jpg");
+  }
+  section #section3 .block_section h2 {
+    font-size: 38px;
+  }
+  section #section3 .block_section .welcome {
+    font-size: 27px;
+  }
+  section #section3 .block_section .description {
+    width: 80vw;
+    margin-top: 5vh;
+    font-size: 17px;
+  }
+  section #section3 .block_section button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  #home1 .home_icon {
+    padding-top: 10vh;
+  }
+  #home1 .home_icon img {
+    padding: 15px;
+    margin: 0 2.5vw;
+  }
+  #home1 .home_icon p {
+    font-size: 20px;
+  }
+  #home1 .home_icon .home1_text {
+    font-size: 15px;
+  }
+  #home1 .home_icon .icon_img1 {
+    justify-items: center;
+  }
+  #home1 .home_icon .icon_img2 {
+    justify-items: center;
+  }
+  #home1 .home_icon .icon_img3 {
+    justify-items: center;
+  }
+  #home1 .home_icon .icon_img4 {
+    justify-items: center;
+  }
+  #home2 .home2_img {
+    width: 35vw;
+  }
+  #home2 .block_btn {
+    height: 8vh;
+  }
+  #home2 .block_btn .home2_btn1 {
+    height: 35px;
+    font-size: 20px;
+    width: 90px;
+    padding: 6px 10px 8px 10px;
+  }
+  #home2 .block_btn .home2_btn2 {
+    height: 35px;
+    font-size: 20px;
+    width: 90px;
+    padding: 6px 10px 8px 10px;
+  }
+  #home2 .block_btn .home2_btn3 {
+    height: 35px;
+    font-size: 20px;
+    width: 90px;
+    padding: 6px 10px 8px 10px;
+  }
+  #home2 .block_btn .home2_btn4 {
+    height: 35px;
+    font-size: 20px;
+    width: 90px;
+    padding: 6px 10px 8px 10px;
+  }
+  #home2 .home2_block_pizza img {
+    height: 110px;
+    width: 130px;
+  }
+  #home2 .home2_block_pizza p {
+    font-size: 13px;
+  }
+  #home2 .order {
+    padding: 4px 7px 4px 7px;
+    font-size: 13px;
+  }
+  #menu_hot_meals,
+  #menu_drinks,
+  #menu_burgers,
+  #menu_pasta {
+    background-size: auto;
+  }
+  #menu_hot_meals .menu1_name,
+  #menu_drinks .menu1_name,
+  #menu_burgers .menu1_name,
+  #menu_pasta .menu1_name {
+    padding: 12vh 0 4vh 0;
+  }
+  #menu_hot_meals .menu1_description,
+  #menu_drinks .menu1_description,
+  #menu_burgers .menu1_description,
+  #menu_pasta .menu1_description {
+    padding: 0 25vw 2vh 25vw;
+    font-size: 15px;
+  }
+  #menu_hot_meals .menu_block,
+  #menu_drinks .menu_block,
+  #menu_burgers .menu_block,
+  #menu_pasta .menu_block {
+    grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
+    grid-template-rows: repeat(3, 4fr);
+    padding-left: 2vw;
+  }
+  #menu_hot_meals .menu_block img,
+  #menu_drinks .menu_block img,
+  #menu_burgers .menu_block img,
+  #menu_pasta .menu_block img {
+    width: 17vw;
+    height: 18vh;
+  }
+  #menu_hot_meals .menu_block h3,
+  #menu_drinks .menu_block h3,
+  #menu_burgers .menu_block h3,
+  #menu_pasta .menu_block h3 {
+    font-size: 18px;
+    font-weight: 100;
+    text-align: start;
+  }
+  #menu_hot_meals .menu_block .menu1_order,
+  #menu_drinks .menu_block .menu1_order,
+  #menu_burgers .menu_block .menu1_order,
+  #menu_pasta .menu_block .menu1_order {
+    padding: 2px 7px 2px 7px;
+    font-size: 15px;
+  }
+  #menu_hot_meals .menu_block .menu_descr1,
+  #menu_drinks .menu_block .menu_descr1,
+  #menu_burgers .menu_block .menu_descr1,
+  #menu_pasta .menu_block .menu_descr1 {
+    font-size: 17px;
+    padding: 6px 6px 2px 0;
+    width: 24vw;
+    grid-row-start: 1;
+    grid-column: 2/3;
+  }
+  #menu_hot_meals .menu_block .menu_descr1 p,
+  #menu_drinks .menu_block .menu_descr1 p,
+  #menu_burgers .menu_block .menu_descr1 p,
+  #menu_pasta .menu_block .menu_descr1 p {
+    margin: 0;
+  }
+  #menu_hot_meals .menu_block .menu_foto1,
+  #menu_drinks .menu_block .menu_foto1,
+  #menu_burgers .menu_block .menu_foto1,
+  #menu_pasta .menu_block .menu_foto1 {
+    grid-row-start: 1;
+    grid-column: 1/2;
+  }
+  #menu_hot_meals .menu_block .menu_descr2,
+  #menu_drinks .menu_block .menu_descr2,
+  #menu_burgers .menu_block .menu_descr2,
+  #menu_pasta .menu_block .menu_descr2 {
+    font-size: 17px;
+    padding: 6px 6px 2px 0;
+    width: 24vw;
+    grid-row-start: 2;
+    grid-column: 2/3;
+  }
+  #menu_hot_meals .menu_block .menu_descr2 p,
+  #menu_drinks .menu_block .menu_descr2 p,
+  #menu_burgers .menu_block .menu_descr2 p,
+  #menu_pasta .menu_block .menu_descr2 p {
+    margin: 0;
+  }
+  #menu_hot_meals .menu_block .menu_foto2,
+  #menu_drinks .menu_block .menu_foto2,
+  #menu_burgers .menu_block .menu_foto2,
+  #menu_pasta .menu_block .menu_foto2 {
+    grid-row-start: 2;
+    grid-column: 1/2;
+  }
+  #menu_hot_meals .menu_block .menu_descr3,
+  #menu_drinks .menu_block .menu_descr3,
+  #menu_burgers .menu_block .menu_descr3,
+  #menu_pasta .menu_block .menu_descr3 {
+    font-size: 17px;
+    padding: 6px 6px 2px 0;
+    width: 24vw;
+    grid-row-start: 3;
+    grid-column: 2/3;
+  }
+  #menu_hot_meals .menu_block .menu_descr3 p,
+  #menu_drinks .menu_block .menu_descr3 p,
+  #menu_burgers .menu_block .menu_descr3 p,
+  #menu_pasta .menu_block .menu_descr3 p {
+    margin: 0;
+  }
+  #menu_hot_meals .menu_block .menu_foto3,
+  #menu_drinks .menu_block .menu_foto3,
+  #menu_burgers .menu_block .menu_foto3,
+  #menu_pasta .menu_block .menu_foto3 {
+    grid-row-start: 3;
+    grid-column: 1/2;
+  }
+  #menu_hot_meals .menu_block .menu_descr4,
+  #menu_drinks .menu_block .menu_descr4,
+  #menu_burgers .menu_block .menu_descr4,
+  #menu_pasta .menu_block .menu_descr4 {
+    font-size: 17px;
+    padding: 6px 6px 2px 0;
+    width: 24vw;
+    grid-row-start: 0;
+    grid-column: 4/5;
+  }
+  #menu_hot_meals .menu_block .menu_descr4 p,
+  #menu_drinks .menu_block .menu_descr4 p,
+  #menu_burgers .menu_block .menu_descr4 p,
+  #menu_pasta .menu_block .menu_descr4 p {
+    margin: 0;
+  }
+  #menu_hot_meals .menu_block .menu_foto4,
+  #menu_drinks .menu_block .menu_foto4,
+  #menu_burgers .menu_block .menu_foto4,
+  #menu_pasta .menu_block .menu_foto4 {
+    grid-row-start: 0;
+    grid-column: 3/4;
+    width: 18vw;
+  }
+  #menu_hot_meals .menu_block .menu_foto4,
+  #menu_drinks .menu_block .menu_foto4,
+  #menu_burgers .menu_block .menu_foto4,
+  #menu_pasta .menu_block .menu_foto4 {
+    grid-row-start: 3;
+    width: 18vw;
+  }
+  #menu_hot_meals .menu_block .menu_descr5,
+  #menu_drinks .menu_block .menu_descr5,
+  #menu_burgers .menu_block .menu_descr5,
+  #menu_pasta .menu_block .menu_descr5 {
+    font-size: 17px;
+    padding: 6px 6px 2px 0;
+    width: 24vw;
+    grid-row-start: 1;
+    grid-column: 4/5;
+  }
+  #menu_hot_meals .menu_block .menu_descr5 p,
+  #menu_drinks .menu_block .menu_descr5 p,
+  #menu_burgers .menu_block .menu_descr5 p,
+  #menu_pasta .menu_block .menu_descr5 p {
+    margin: 0;
+  }
+  #menu_hot_meals .menu_block .menu_foto5,
+  #menu_drinks .menu_block .menu_foto5,
+  #menu_burgers .menu_block .menu_foto5,
+  #menu_pasta .menu_block .menu_foto5 {
+    grid-row-start: 1;
+    grid-column: 3/4;
+    width: 18vw;
+  }
+  #menu_hot_meals .menu_block .menu_foto4,
+  #menu_drinks .menu_block .menu_foto4,
+  #menu_burgers .menu_block .menu_foto4,
+  #menu_pasta .menu_block .menu_foto4 {
+    grid-row-start: 3;
+    width: 18vw;
+  }
+  #menu_hot_meals .menu_block .menu_descr6,
+  #menu_drinks .menu_block .menu_descr6,
+  #menu_burgers .menu_block .menu_descr6,
+  #menu_pasta .menu_block .menu_descr6 {
+    font-size: 17px;
+    padding: 6px 6px 2px 0;
+    width: 24vw;
+    grid-row-start: 2;
+    grid-column: 4/5;
+  }
+  #menu_hot_meals .menu_block .menu_descr6 p,
+  #menu_drinks .menu_block .menu_descr6 p,
+  #menu_burgers .menu_block .menu_descr6 p,
+  #menu_pasta .menu_block .menu_descr6 p {
+    margin: 0;
+  }
+  #menu_hot_meals .menu_block .menu_foto6,
+  #menu_drinks .menu_block .menu_foto6,
+  #menu_burgers .menu_block .menu_foto6,
+  #menu_pasta .menu_block .menu_foto6 {
+    grid-row-start: 2;
+    grid-column: 3/4;
+    width: 18vw;
+  }
+  #menu_hot_meals .menu_block .menu_foto4,
+  #menu_drinks .menu_block .menu_foto4,
+  #menu_burgers .menu_block .menu_foto4,
+  #menu_pasta .menu_block .menu_foto4 {
+    grid-row-start: 3;
+    width: 18vw;
+  }
+  #menu_pricing {
+    background-size: auto;
+  }
+  #menu_pricing .menu2_name {
+    padding-top: 8vh;
+    font-size: 28px;
+  }
+  #menu_pricing .romb {
+    height: 1vh;
+    padding-left: 40vw;
+  }
+  #menu_pricing .romb hr {
+    height: 0.01px;
+  }
+  #menu_pricing .menu2_description {
+    padding: 2vh 20vw 8vh 20vw;
+    padding-bottom: 8vh;
+    font-size: 17px;
+  }
+  #menu_pricing .menu2_blocks {
+    padding: 0 4vw;
+  }
+  #menu_pricing .menu2_blocks .hr-dashed {
+    padding-top: 20px;
+    width: 18vw;
+  }
+  #menu_pricing .menu2_blocks .order_name {
+    font-size: 16px;
+  }
+  #menu_pricing .menu2_blocks .discribe {
+    font-size: 15px;
+    width: 30vw;
+  }
+  #blog {
+    background-size: auto;
+  }
+  #blog .blog_name {
+    font-size: 28px;
+  }
+  #blog .blog_description {
+    padding: 2vh 20vw 8vh 20vw;
+  }
+  #blog .blog_menu {
+    padding: 3vh 8vw;
+  }
+  #about {
+    background-size: auto;
+  }
+  #about .contacts_info {
+    padding-left: 10vw;
+  }
+  #about .contacts_info .contacts_info1 {
+    height: 12vh;
+    padding: 9vh 0 0 3vw;
+  }
+  #about .contacts_info .contacts_info1 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info1 p {
+    font-size: 11px;
+  }
+  #about .contacts_info .contacts_info4 {
+    display: flex;
+    align-items: center;
+  }
+  #about .contacts_info .contacts_info2 {
+    height: 12vh;
+    padding: 9vh 0 0 3vw;
+  }
+  #about .contacts_info .contacts_info2 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info2 p {
+    font-size: 11px;
+  }
+  #about .contacts_info .contacts_info4 {
+    display: flex;
+    align-items: center;
+  }
+  #about .contacts_info .contacts_info3 {
+    height: 12vh;
+    padding: 9vh 0 0 3vw;
+  }
+  #about .contacts_info .contacts_info3 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info3 p {
+    font-size: 11px;
+  }
+  #about .contacts_info .contacts_info4 {
+    display: flex;
+    align-items: center;
+  }
+  #about .contacts_info .contacts_info4 {
+    height: 12vh;
+    padding: 9vh 0 0 3vw;
+  }
+  #about .contacts_info .contacts_info4 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info4 p {
+    font-size: 11px;
+  }
+  #about .contacts_info .contacts_info4 {
+    display: flex;
+    align-items: center;
+  }
+  #about #article_video {
+    height: 79vh;
+  }
+  #about #article_video article .topic_of_article {
+    font-size: 20px;
+  }
+  #about #article_video article p {
+    font-size: 18px;
+  }
+  #contacnt {
+    background-size: auto;
+  }
+  #contacnt .contact_us {
+    padding: 10vh 7vw;
+  }
+  #contacnt .contact_us label {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 790px) {
+  header {
+    height: 8vh;
+  }
+  header #name_block {
+    padding-left: 30px;
+    align-items: center;
+  }
+  header #name_block .img_name {
+    width: 12px;
+    height: 25px;
+  }
+  header #name_block #name {
+    font-size: 14px;
+  }
+  header #name_block #delicous {
+    font-size: 11px;
+  }
+  section {
+    padding-top: 8vh;
+  }
+  section #section1 .block_section {
+    grid-column: 1/3;
+    justify-self: center;
+    text-align: center;
+    padding-left: 2vw;
+  }
+  section #section1 .block_section h2 {
+    font-size: 32px;
+  }
+  section #section1 .block_section .section_delicous {
+    font-size: 27px;
+  }
+  section #section1 .block_section .description {
+    padding-left: 3vw;
+    width: 70vw;
+    font-size: 18px;
+  }
+  section #section1 .block_section button {
+    padding: 10px;
+    font-size: 17px;
+    width: 15vw;
+  }
+  section #section1 .section_img {
+    display: none;
+  }
+  section #section1 .dot {
+    grid-column: 1/3;
+    padding-left: 0;
+    justify-self: center;
+  }
+  section #section2 .block_section {
+    grid-column: 1/3;
+    justify-self: center;
+    text-align: center;
+  }
+  section #section2 .block_section h2 {
+    font-size: 32px;
+  }
+  section #section2 .block_section .cranchy {
+    font-size: 27px;
+  }
+  section #section2 .block_section .description {
+    padding-left: 3vw;
+    width: 70vw;
+    font-size: 18px;
+  }
+  section #section2 .block_section button {
+    padding: 10px;
+    font-size: 17px;
+    width: 15vw;
+  }
+  section #section2 .section_img {
+    display: none;
+  }
+  section #section2 .dot {
+    grid-column: 1/3;
+    padding-left: 0;
+    justify-self: center;
+  }
+  section #section3 {
+    background-image: url("/style/bg/bg_3small.jpg");
+  }
+  section #section3 .block_section h2 {
+    font-size: 32px;
+  }
+  section #section3 .block_section .welcome {
+    font-size: 27px;
+  }
+  section #section3 .block_section .description {
+    width: 80vw;
+    margin-top: 5vh;
+    font-size: 17px;
+  }
+  section #section3 .block_section button {
+    padding: 10px;
+    font-size: 17px;
+    width: 15vw;
+  }
+  #home1 .home1_img_block .home_img1 {
+    display: none;
+  }
+  #home1 .home1_img_block .home_img4 {
+    display: none;
+  }
+  #home1 .home1_img_block .home_img2,
+  #home1 .home1_img_block .home_img3 {
+    width: 50vw;
+    height: 50vh;
+  }
+  #home2 {
+    padding-top: 10vh;
+  }
+  #home2 .home2_img {
+    display: none;
+  }
+  #home2 .block_btn {
+    grid-column: 1/4;
+    height: 10vh;
+  }
+  #home2 .home2_block_pizza {
+    padding-top: 5vh;
+    grid-column: 1/4;
+  }
+  #home2 .home2_block_pizza img {
+    height: 130px;
+    width: 150px;
+  }
+  #home2 .home2_block_pizza p {
+    padding: 8px 12px 8px 12px;
+    font-size: 15px;
+  }
+  #home2 .order {
+    margin-top: 8px;
+    padding: 4px 7px 4px 7px;
+    font-size: 13px;
+  }
+  #menu_hot_meals .menu1_name,
+  #menu_drinks .menu1_name,
+  #menu_burgers .menu1_name,
+  #menu_pasta .menu1_name {
+    padding-bottom: 4vh;
+    font-size: 25px;
+  }
+  #menu_hot_meals .menu1_description,
+  #menu_drinks .menu1_description,
+  #menu_burgers .menu1_description,
+  #menu_pasta .menu1_description {
+    padding: 0 25vw 2vh 25vw;
+    font-size: 12px;
+  }
+  #menu_hot_meals .menu_block,
+  #menu_drinks .menu_block,
+  #menu_burgers .menu_block,
+  #menu_pasta .menu_block {
+    grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
+    grid-template-rows: repeat(3, 4fr);
+    padding-left: 2vw;
+  }
+  #menu_hot_meals .menu_block img,
+  #menu_drinks .menu_block img,
+  #menu_burgers .menu_block img,
+  #menu_pasta .menu_block img {
+    width: 17vw;
+    height: 18vh;
+  }
+  #menu_hot_meals .menu_block h3,
+  #menu_drinks .menu_block h3,
+  #menu_burgers .menu_block h3,
+  #menu_pasta .menu_block h3 {
+    font-size: 15px;
+    margin-bottom: 1vh;
+  }
+  #menu_hot_meals .menu_block .menu1_order,
+  #menu_drinks .menu_block .menu1_order,
+  #menu_burgers .menu_block .menu1_order,
+  #menu_pasta .menu_block .menu1_order {
+    margin-top: 2vh;
+    font-size: 12px;
+    height: 20px;
+  }
+  #menu_hot_meals .menu_block .menu_descr1,
+  #menu_drinks .menu_block .menu_descr1,
+  #menu_burgers .menu_block .menu_descr1,
+  #menu_pasta .menu_block .menu_descr1 {
+    font-size: 14px;
+  }
+  #menu_hot_meals .menu_block .menu_descr2,
+  #menu_drinks .menu_block .menu_descr2,
+  #menu_burgers .menu_block .menu_descr2,
+  #menu_pasta .menu_block .menu_descr2 {
+    font-size: 14px;
+  }
+  #menu_hot_meals .menu_block .menu_descr3,
+  #menu_drinks .menu_block .menu_descr3,
+  #menu_burgers .menu_block .menu_descr3,
+  #menu_pasta .menu_block .menu_descr3 {
+    font-size: 14px;
+  }
+  #menu_hot_meals .menu_block .menu_descr4,
+  #menu_drinks .menu_block .menu_descr4,
+  #menu_burgers .menu_block .menu_descr4,
+  #menu_pasta .menu_block .menu_descr4 {
+    font-size: 14px;
+  }
+  #menu_hot_meals .menu_block .menu_descr5,
+  #menu_drinks .menu_block .menu_descr5,
+  #menu_burgers .menu_block .menu_descr5,
+  #menu_pasta .menu_block .menu_descr5 {
+    font-size: 14px;
+  }
+  #menu_hot_meals .menu_block .menu_descr6,
+  #menu_drinks .menu_block .menu_descr6,
+  #menu_burgers .menu_block .menu_descr6,
+  #menu_pasta .menu_block .menu_descr6 {
+    font-size: 14px;
+  }
+  #menu_pricing .menu2_name {
+    padding-top: 8vh;
+    font-size: 23px;
+  }
+  #menu_pricing .menu2_description {
+    padding: 2vh 20vw 8vh 20vw;
+    padding-bottom: 8vh;
+    font-size: 12px;
+  }
+  #menu_pricing .menu2_blocks {
+    padding: 0 4vw;
+  }
+  #menu_pricing .menu2_blocks .hr-dashed {
+    display: none;
+  }
+  #menu_pricing .menu2_blocks .order_name {
+    font-size: 15px;
+  }
+  #menu_pricing .menu2_blocks .discribe {
+    font-size: 14px;
+  }
+  #blog .blog_name {
+    font-size: 28px;
+    padding: 14vh 0 7vh 0;
+  }
+  #blog .blog_description {
+    display: none;
+  }
+  #blog .blog_menu {
+    padding: 7vh 4vw;
+    text-align: center;
+  }
+  #blog .blog_menu .name {
+    text-align: center;
+    font-size: 17px;
+  }
+  #blog .blog_menu .date {
+    font-size: 13px;
+  }
+  #blog .blog_menu p {
+    padding: 0 2vw 7vh 2vw;
+    line-height: 3.5vh;
+  }
+  #blog .blog_menu img {
+    width: 27vw;
+    height: 27vh;
+  }
+  #about .contacts_info {
+    padding-left: 4vw;
+  }
+  #about .contacts_info .contacts_info1 {
+    width: 22vw;
+    padding: 9vh 0 0 2vw;
+  }
+  #about .contacts_info .contacts_info1 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info1 p {
+    font-size: 12px;
+  }
+  #about .contacts_info .contacts_info4 {
+    width: 17vw;
+  }
+  #about .contacts_info .contacts_info2 {
+    width: 22vw;
+    padding: 9vh 0 0 2vw;
+  }
+  #about .contacts_info .contacts_info2 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info2 p {
+    font-size: 12px;
+  }
+  #about .contacts_info .contacts_info4 {
+    width: 17vw;
+  }
+  #about .contacts_info .contacts_info3 {
+    width: 22vw;
+    padding: 9vh 0 0 2vw;
+  }
+  #about .contacts_info .contacts_info3 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info3 p {
+    font-size: 12px;
+  }
+  #about .contacts_info .contacts_info4 {
+    width: 17vw;
+  }
+  #about .contacts_info .contacts_info4 {
+    width: 22vw;
+    padding: 9vh 0 0 2vw;
+  }
+  #about .contacts_info .contacts_info4 .info {
+    font-size: 13px;
+  }
+  #about .contacts_info .contacts_info4 p {
+    font-size: 12px;
+  }
+  #about .contacts_info .contacts_info4 {
+    width: 17vw;
+  }
+  #about #article_video #video {
+    display: none;
+  }
+  #about #article_video article .topic_of_article {
+    font-size: 20px;
+  }
+  #about #article_video article p {
+    font-size: 18px;
+  }
+  #contacnt {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #contacnt iframe {
+    width: 100%;
+    height: 40vh;
+  }
+  #contacnt .contact_us {
+    padding: 3vh 7vw;
+  }
+  #contacnt .contact_us .input_name {
+    width: 60vw;
+    margin-bottom: 4vh;
+  }
+  #contacnt .contact_us label {
+    font-size: 16px;
+  }
+  #contacnt .contact_us textarea {
+    width: 60vw;
+  }
+  #contacnt .contact_us .send {
+    height: 5vh;
+    width: 15vw;
+  }
+  footer {
+    padding-top: 15vh;
+  }
+  footer .footer_blocks {
+    padding: 10vh 3vw 1vh 5vw;
+    justify-content: space-between;
+  }
+  footer .footer_blocks .block1,
+  footer .footer_blocks .block4 {
+    width: 20vw;
+  }
+  footer .footer_blocks .block1 {
+    text-align: center;
+  }
+  footer .footer_blocks .block1 h3 {
+    width: 20vw;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  footer .footer_blocks .block2 {
+    text-align: center;
+  }
+  footer .footer_blocks .block2 h3 {
+    width: 20vw;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  footer .footer_blocks .block3 {
+    text-align: center;
+  }
+  footer .footer_blocks .block3 h3 {
+    width: 20vw;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  footer .footer_blocks .block4 {
+    text-align: center;
+  }
+  footer .footer_blocks .block4 h3 {
+    width: 20vw;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  footer .footer_blocks .block_question1 {
+    padding-bottom: 3vh;
+  }
+  footer .footer_blocks .block_question1 img {
+    padding-right: 1vw;
+  }
+  footer .footer_blocks .block_question2 {
+    padding-bottom: 3vh;
+  }
+  footer .footer_blocks .block_question2 img {
+    padding-right: 1vw;
+  }
+  footer .footer_blocks .block_question3 {
+    padding-bottom: 3vh;
+  }
+  footer .footer_blocks .block_question3 img {
+    padding-right: 1vw;
+  }
+  footer .footer_blocks .block_question4 {
+    padding-bottom: 3vh;
+  }
+  footer .footer_blocks .block_question4 img {
+    padding-right: 1vw;
+  }
+  footer .footer_blocks .block2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: start;
+    width: 20vw;
+  }
+  footer .footer_blocks .block2 h3 {
+    width: 18vw;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  footer .footer_blocks .block2 .footer_img {
+    padding: 0;
+    height: 13vh;
+    width: 15vw;
+    grid-column: 1/3;
+  }
+  footer .footer_blocks .block2 p {
+    width: 18vw;
+    font-size: 12px;
+  }
+  footer .footer_blocks .block2 .date {
+    display: none;
+  }
+  footer .footer_blocks .mini_img {
+    width: auto;
+    height: 15px;
+    color: rgba(153, 153, 153, 0.966);
+  }
+  footer .footer_blocks p {
+    margin: 0;
+    color: rgba(153, 153, 153, 0.966);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  footer .footer_blocks h5 {
+    color: rgba(153, 153, 153, 0.966);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  footer .footer_blocks span {
+    color: rgba(153, 153, 153, 0.966);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  footer .social_networks {
+    padding-left: 10vw;
+  }
+  footer .social_networks img {
+    height: 20px;
+    margin: 0;
+  }
+  footer .social_networks img:hover {
+    cursor: pointer;
+  }
+  footer .copyright {
+    padding-top: 20vh;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+  }
+}
 body {
   margin: 0;
   width: 100%;

@@ -1,10 +1,11 @@
     #services{
-            height: 90vh;
+            height: 98vh;
         background-image: url('bg/food.png');
         .services_name{
              @extend %name;
             color: $color1;
             font-weight: 100;
+            padding-top: 12vh;
         }
         .services_description{
             @extend %menu_description;
@@ -45,7 +46,6 @@
         }
     }
     #blog{
-         height: 90vh;
         @extend %background;
         .blog_name{
              @extend %name;
@@ -92,7 +92,7 @@
            color: lighten($color1, $amount: 45%);
            font-size: calc($font-size - 6px);
            font-weight: 100;
-         
+           padding-bottom: 5vh;
         }
        }
 

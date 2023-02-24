@@ -1,19 +1,24 @@
     #about{
-            height: 90vh;
+            height: 100vh;
+             border-bottom: 5px solid $color2;
         @extend %background;
         .contacts_info{
             background-color: $color1;
             padding-left: 12vw;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
         @for $i from 1 to 5{
             .contacts_info#{$i}{
-                height: 13vh;
                 width: 17vw;
-                padding: 2vh 2vw;
+                 padding: 12vh 0 0 3vw;
+                height: 15vh;
+             
             .icon {
                 margin: 0;
                 width: 15px;
-                height: 15px;padding-right: 2px;
+                height: 15px;
+                padding-right: 2px;
                 }
             .info{
                 color: $color3;
@@ -37,14 +42,14 @@
         }
     #article_video{
       display: flex;
-      height: 70vh;
-      border-bottom: 5px solid $color2;
+      height: 72vh;
+    
     #video {
        margin: 0;
        width: 4000px;
     }
     article {
-       padding: 12vh 5vw 5vh 5vw;
+       padding: 12vh 5vw 7vh 5vw;
        align-items: center;
     img{
         height: 25px;
@@ -73,6 +78,7 @@
 background-color: $color1;
     iframe{
         height: 90vh;
+       
     }
       .contact_us{
     padding: 10vh 13vw;
@@ -110,7 +116,7 @@ color: darken($color3, $amount: 50%);
 .send{
 margin-top: 4vh;
 height: 7vh;
-width: 6vw;
+width: 8vw;
 background-color: $color2;
 border: none;
  font-size: $font-size;
@@ -120,13 +126,6 @@ border: none;
     cursor: pointer;
  }
 }  
-.error{
-    display: none;
-    font-size: calc($font-size - 3px);
-    font-weight: 100;
-    font-family: $font2;
-    color: red;
-}
 }
 }
 

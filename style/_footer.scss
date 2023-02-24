@@ -13,6 +13,10 @@ footer{
         .block#{$i}{
             margin: 0;
             padding: 0 2vw 0 0;
+            a{
+               text-decoration: none;
+               color: $color3;
+            }
             h3 {
                 margin: 0;
                 color: $color3;
@@ -55,22 +59,12 @@ footer{
        .discrabe{
         grid-column:2/3;
        }
-       .article{
-         &:hover {
-             cursor: pointer;
-         }
-       }
-       span{
+       span,
+       time{
         color: darken($color3, $amount: 40%);
-       
        }
         .date {
             margin-top: 2vh;
-           .message{
-             &:hover {
-                 cursor: pointer;
-             }
-           }
         }
         }
     .mini_img {
@@ -90,10 +84,6 @@ footer{
         font-family: $font2;
         font-size: calc($font-size - 6px);
         font-weight: 100;
-         &:hover {
-             cursor: pointer;
-             font-weight: 600;
-         }
      }
      span{
         color: darken($color3, $amount: 40%);

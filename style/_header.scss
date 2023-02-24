@@ -1,8 +1,8 @@
 header {
-    #header_top {
-        height: 10vh;
-        width: 100vw;
+    height: 10vh;
+    width: 100vw;
         background: rgba(0, 0%, 0%, 1);
+        
         display: inline-grid;
         grid-template-columns: repeat(2, 2fr) repeat(2, 4fr) 2fr;
         position: fixed;
@@ -56,175 +56,21 @@ header {
                      &:hover {
                          cursor: pointer;
                      }
-                }}}
-        .home {
-            color: $color2;
-        }}
-    #header1 {
-        width: 100vw;
-        height: 100vh;
-        background-image: url("bg/bg_1.jpg");
-        background-repeat: no-repeat;
-        display: grid;
-        align-content: center;
-        align-items: end;
-        justify-content: space-around;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 5fr 1fr;
-        .block_header {
-            @extend %block_header;
-            h2 {
-                @extend %header_name;
-            }
-            p {
-                margin: 0;
-            }
-            .header_delicous {
-                @extend %header_delicous;
-            }
-            .description {
-                @extend %header_description;
-            }
-            button {
-                @extend %button;
-            }
-            .order_now {
-                @extend %header_order_now;
-            }
-            .view {
-                @extend %header_view;
-            }
+                     
+                     
+                }}
+                .menu_btn{
+                    color: $color3;
+                    text-decoration: none;
+                    }
+                     &:visited {
+                         color: $color3;
+                     }
+                   
+                   
+                }
+                #home_btn {
+                    color: $color2;
+                }
         }
-        .header_img {
-            @extend %header_img;
-        }
-        .dot {
-            @extend %dot;
-            .first {
-                color: darken($color3, $amount: 30%);
-                border: 2px solid darken($color3, $amount: 30%);
-            }
-            i {
-                @extend %header_dot;
-            }
-        }
-    }
-
-    #header2 {
-        height: 100vh;
-        width: 100vw;
-        background-image: url("bg/bg_1.jpg");
-        background-repeat: no-repeat;
-        display: grid;
-        display: none;
-        align-content: center;
-        align-items: end;
-        justify-content: space-around;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 5fr 1fr;
-        .block_header {
-            padding: 270px 0 0 10px;
-            text-align: start;
-            justify-self: start;
-            h2 {
-                @extend %header_name;
-            }
-            p {
-                margin: 0;
-            }
-            .cranchy {
-                @extend %header_delicous;
-            }
-            .description {
-                @extend %header_description;
-            }
-            button {
-                @extend %button;
-            }
-            .order_now {
-                @extend %header_order_now;
-            }
-            .view {
-                @extend %header_view;
-            }
-        }
-
-        .header_img {
-            @extend %header_img;
-            justify-self: end;
-        }
-
-        .dot {
-            @extend %dot;
-            padding-left: 50vw;
-            grid-column: 1/3;
-
-            .second {
-                color: darken($color3, $amount: 30%);
-                border: 2px solid darken($color3, $amount: 30%);
-            }
-
-            i {
-                @extend %header_dot;
-            }
-        }
-    }
-
-    #header3 {
-        height: 80vh;
-        width: 100vw;
-        padding-top: 20vh;
-        background-image: url('bg/bg_3.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-content: center;
-        align-items: center;
-        justify-items: center;
-        grid-template-rows: 5fr 1fr;
-        display: none;
-
-        .block_header {
-            grid-row: 1/2;
-            text-align: center;
-            @extend %block_header;
-            h2 {
-                @extend %header_name;
-            }
-            p {
-                margin: 0;
-            }
-            .welcome {
-                @extend %header_delicous;
-            }
-            .description {
-                padding-left: 0;
-                width: 800px;
-                @extend %header_description;
-            }
-            button {
-                @extend %button;
-                margin-bottom: 85px;
-            }
-            .order_now {
-                @extend %header_order_now;
-            }
-            .view {
-                @extend %header_view;
-            }
-        }
-        .dot {
-            grid-row: 2/3;
-            align-items: center;
-            @extend %dot;
-            padding: 0;
-
-            .third {
-                color: darken($color3, $amount: 30%);
-                border: 2px solid darken($color3, $amount: 30%);
-            }
-            i {
-                @extend %header_dot;
-            }
-        }
-    }
-}
+    

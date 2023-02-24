@@ -1,7 +1,7 @@
 %block_header {
     justify-self: end;
     text-align: end;
-    padding-right: 10px;
+    padding-right: 2vw;
     grid-row: 1/2;
 }
 
@@ -25,9 +25,9 @@
 }
 
 %header_description {
-    margin-top: 20px;
+    margin-top: 7vh;
     color: $color3;
-    width: 550px;
+    width: 46vw;
     font-family: $font1;
     font-size: $font-size;
     letter-spacing: 0.1em;
@@ -37,8 +37,8 @@
 %button {
     padding: 20px;
     font-size: $font-size;
-    width: 200px;
-    margin: 100px 1px 0 1px;
+    width: 12vw;
+    margin: 10vh 1px 0 1px;
 
     &:hover {
         cursor: pointer;
@@ -84,7 +84,7 @@
 }
 %background{
     background-image: url("bg/bg_4.jpg");
-    background-size: 100% 100vh;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 %name{
@@ -124,7 +124,7 @@
       font-size: calc($font-size - 4px);
 }
 %menu_description{
-    padding: 10px 35vw 50px 35vw;
+    padding: 2vh 35vw 8vh 35vw;
     color: darken($color3, $amount: 45%);
     font-size: calc($font-size - 3px);
     font-family: $font2;

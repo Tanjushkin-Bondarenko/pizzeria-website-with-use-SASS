@@ -4,5 +4,17 @@
 @import 'main_about_contact';
 
 main{
-    width: 100vw;
+    width: 100%;
+    .quantity_btn {
+        display: inline-flex;
+        padding-left: 5px;
+        width: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+        color: darken($color3, $amount: 60%);
+        
+    }
+    a {
+        text-decoration: none;
+    }
 }

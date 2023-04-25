@@ -1,18 +1,16 @@
     #about{
-            height: 100vh;
-             border-bottom: 5px solid $color2;
         @extend %background;
+        padding-bottom: 20px;
         .contacts_info{
             background-color: $color1;
-            padding-left: 12vw;
+            padding-left: 170px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+           
         @for $i from 1 to 5{
             .contacts_info#{$i}{
-                width: 17vw;
-                 padding: 12vh 0 0 3vw;
-                height: 15vh;
+                width: 500px;
+                 padding: 75px 0 20px 30px;
+                height: 150px;
              
             .icon {
                 margin: 0;
@@ -29,27 +27,28 @@
                 margin: 0;
                 color: lighten($color1, $amount: 45%);
                 font-family: $font2;
-                padding-top: 1vh;
+                padding-top: 10px;
                 font-size: calc($font-size - 7px);
                 }}
             }
             .contacts_info4{
                 background-color: $color2;
-                width: 37vw;
+                width: 500px;
                 padding-right: 0;
                 margin-left: 0;
             }
         }
     #article_video{
       display: flex;
-      height: 72vh;
-    
+      height: 550px;
     #video {
        margin: 0;
-       width: 4000px;
+       width: 650px;
     }
     article {
-       padding: 12vh 5vw 7vh 5vw;
+       padding: 150px 0;
+      margin: 0 auto;
+      width: 700px;
        align-items: center;
     img{
         height: 25px;
@@ -60,7 +59,7 @@
         text-transform: uppercase;
         font-size: calc($font-size + 5px);
         letter-spacing: 0.1em;
-        padding-bottom: 2vh;
+        padding-bottom: 15px;
     .pizza{
         color: $color2;
     }}
@@ -73,15 +72,18 @@
 }
 
 #contacnt{
-    height: 90vh;
+   
     display: flex;
 background-color: $color1;
+padding-top: 60px;
+  #map{
     iframe{
-        height: 90vh;
-       
-    }
+      height: 600px;
+     width: 650px;
+    }}
       .contact_us{
-    padding: 10vh 13vw;
+    width: 500px;
+    margin: 0 auto;
   .topic{
     color: $color3;
     font-size: calc($font-size + 3px);
@@ -90,13 +92,16 @@ background-color: $color1;
     letter-spacing: 0.1em;
     
   }
+  input{
+ width: 400px;
+  }
   .input_name {
-    width: 35vw;
+   
     background-color: $color1;
    border: none;
    border-bottom: 1px solid darken($color3, $amount: 50%);
     color: darken($color3, $amount: 50%);
-    margin-bottom: 2vh;
+    margin-bottom: 25px;
    
   }
   label{
@@ -109,14 +114,14 @@ background-color: $color1;
 background-color: $color1;
 border: none;
 border-bottom: 1px solid darken($color3, $amount: 50%);
-padding: 3vh 0;
-width: 35vw;
+padding: 30px 0;
+width: 400px;
 color: darken($color3, $amount: 50%);
   }
 .send{
-margin-top: 4vh;
-height: 7vh;
-width: 8vw;
+margin-top: 40px;
+height: 50px;
+width: 130px;
 background-color: $color2;
 border: none;
  font-size: $font-size;

@@ -1,18 +1,24 @@
 #order{
     display: none;
-    // display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 10vh;
+    right: 2vw;
+    bottom: 0;
+    transition: all .3s ease 0s;
     background-color: lighten($color2, $amount: 10%);
-    width: 100vw;
+    width: 400px;
+    overflow: hidden auto ;
     .head_order{
          height: 5vh;
          display: flex;
          flex-direction: row;
-         padding-top: 10vh;
+         justify-content: space-between;
+         padding-top: 2vh;
     .name_of_order {
-       width: 90vw;
+       padding: 0 30px 15px 70px;
        margin: 0;
-       text-align: center;
+     
        text-transform: uppercase;
        font-family: $font1;
        font-size: $font-size;
@@ -20,69 +26,146 @@
        color: lighten($color1, $amount: 35%);
     }
     .xmark {
+      font-size: calc($font-size + 4px);
+      color: lighten($color1, $amount: 45%);
       width: 7vw;
-      color: lighten($color1, $amount: 35%);
+      text-align: end;
+      padding-right: 20px;
       &:hover{
         cursor: pointer;
       }
     }
     }
     #order_block{
-        padding-left: 5vw;
-         display: grid;
+      display: flex;
+    flex-direction: column;
+        padding: 18px 3vw 10px 3vw;  
     }
+     #total_sum {
+       display: flex;
+       padding: 3vh 0 10px 10px;
+       color: lighten($color1, $amount: 35%);
+       font-family: $font1;
+
+     }
     #to_order_btn{ 
         width: 40vw;
     }
     .div_order{
-        height: 25vh;
-        display: grid;
-        width: 40vw;
-        grid-template-columns: 3fr 1fr;
+        height: auto;
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+       margin: 15px 0;
+       color: lighten($color1, $amount: 35%);
+          font-family: $font1;
     .img_in_order{
         width: auto;
         height: 80px;
-        grid-column: 1/2;
+   
     }
-    .name_in_order{
-     margin: 0;
-     grid-column: 1/2;
+    .info_position{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+          width: 40vw;
+          padding-left: 2vw;
+     
+    }
+   p{
+    margin: 0;
+  }
+    .quantity{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: $font-size;
       color: lighten($color1, $amount: 35%);
-    }
-    .price_in_order{
-        grid-column: 1/2;
-         color: lighten($color1, $amount: 35%);
+      height: 30px;
+      width: 80px;
+      i{
+        &:hover{
+          cursor: pointer;
+        }
+      }
     }
     .xmark{
-        grid-column: 2/3;
          color: lighten($color1, $amount: 35%);
          &:hover{
             cursor: pointer;}
        }   }
-       form {
+      #form_order {
+        display: none;
         font-family: $font2;
-           padding: 3vh 0 0 5vw;
-           input,
-           textarea {
-        padding-bottom: 3px;
-        width: 320px;  
-        background-color:lighten($color2, $amount: 10%);
-        border: none;
-        border-bottom: 1px solid lighten($color1, $amount: 35%);
+        padding: 3vh 2vw 0 2vw;
+       label{
+      .error {
+         display: none;
+         color: red;
+       }}
+        input,
+        textarea {
+          padding-bottom: 3px;
+          width: 320px;
+          background-color: lighten($color2, $amount: 10%);
+          border: none;
+          border-bottom: 1px solid lighten($color1, $amount: 35%);
+  
         }
-         .quantity {
-             grid-column: 1/2;
-             padding-bottom: 3vh;
+       
+
+      #send_button {
+       display: none;
+       text-transform: uppercase;
+       width: 190px;
+       margin: 5vh 1vw;
+       padding: 7px;
+       background-color: rgba(255, 255, 255, 0);
+       color: rgba(255, 255, 255, 0.966);
+       border: 1px solid rgb(238, 235, 235);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+       #change_button {
+         display: none;
+         text-transform: uppercase;
+         width: 200px;
+         margin: 5vh 1vw;
+         padding: 7px 5px;
+         background-color: rgba(255, 255, 255, 0);
+         color: rgba(255, 255, 255, 0.966);
+         border: 1px solid rgb(238, 235, 235);
+
+         &:hover {
+           cursor: pointer;
          }
-         .quantity input{
-            width: 60px;
-            border: 1px solid lighten($color1, $amount: 35%);
-         }
-        #order_button{
-         margin-top: 5vh;
-           padding: 7px;
-           border: 1px solid lighten($color1, $amount: 35%);
-           font-weight:600;
-        }
        }
+        .quantity {
+          grid-column: 1/2;
+          padding-bottom: 3vh;
+        }
+
+        .quantity input {
+          width: 60px;
+          border: 1px solid lighten($color1, $amount: 35%);
+        }
+      }
+      #btns{
+   display: flex;
+   flex-direction: row;
+      }
+      #button_order {
+        text-transform: uppercase;
+        width: 150px;
+        margin: 5vh 3vw;
+        padding: 7px;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, 0.966);
+        border: 1px solid rgb(238, 235, 235);
+      &:hover{
+        cursor: pointer;
+      }
+      }
 }

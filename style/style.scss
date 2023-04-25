@@ -7,7 +7,12 @@
 @import 'footer';
 @import "mediascreen";
 
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
-    width: 100%;
+    width: 100vw;
+    position: relative;
+     overflow: hidden auto;
 }

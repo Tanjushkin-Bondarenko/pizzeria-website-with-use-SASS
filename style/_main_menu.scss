@@ -2,25 +2,28 @@
     #menu_drinks,
     #menu_burgers, 
     #menu_pasta {
-    height: 98vh;
     @extend %background;
+    padding-bottom: 10px;
     
     .menu1_name {
-        
         @extend %name;
-        padding: 12vh 0 6vh 0;
+        font-size: 2em;
+        padding: 85px 0 20px 0;
     }
     .menu1_description {
         @extend %menu_description;
+        padding-bottom: 20px;
     }
     .menu_block {
+        height: 470px;
         display: grid;
-        grid-template-columns: repeat(6, 2fr);
-        grid-template-rows: repeat(2, 5fr);
-        align-items: end;
+        padding: 0 20px 20px 20px;
+        grid-template-columns: repeat(6, minmax(180px, 245px));
+        grid-template-rows: repeat(2, minmax(180px, 240px));
+        
         img {
-            width: 16.5vw;
-            height: 29vh;
+           width:100%;
+           height: auto;
         }
         h3 {
             @extend %h3;
@@ -28,7 +31,6 @@
         }
         .menu1_order {
             @extend %add_btn;
-            height: 30px;
             font-size: calc($font-size - 5px);
             margin-left: 12%;
         }
@@ -38,11 +40,10 @@
         @for $i from 1 to 7 {
             .menu_descr#{$i} {
                 color: darken($color3, $amount: 50%);
-                padding: 14px;
-                width: 13vw;
-           
-            }
-            
+                padding:7px;
+                height: auto;
+                width: 100%;
+            } 
         }
     }
 }
@@ -52,100 +53,95 @@
     display: none;
  }
 #menu_pricing {
-    height: 98vh;
     @extend %background;
+    padding-bottom: 40px;
     .menu2_name {
         @extend %name;
     }
     .romb {
-        display: inline-grid;
+        display: grid;
         grid-auto-flow: column;
-        width: 150px;
+        width: calc($width * 2.7);
         color: $color2;
-        padding-left: 45vw;
-        gap: 4px;
+        margin: 0 auto;
+        gap: 1px;
         hr {
-            width: 55px;
+            width: 100px;
             height: 0.1px;
             background-color: $color2;
         }
     }
-
     .menu2_description {
         @extend %menu_description;
-        padding-bottom: 7vh;
+        padding-bottom: 30px;
         font-size: calc($font-size - 5px);
     }
-
     .menu2_blocks {
+        padding-bottom: 20px;
+        height: 500px;
         display:grid;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(3, 1fr);
-        padding: 0 15vw;
-
+        width: 1150px;
+        margin: 0 auto;
         @for $i from 1 to 9 {
             .menu2_block#{$i} {
                 display: inline-grid;
-                padding: 0.5vh 1vw;
+                padding: 7px 10px;
                 grid-template-columns: 1fr 2fr 2fr 0.5fr;
                 grid-template-rows: repeat(2, 1fr);
             }}
-            .menu2_order {
+            button {
                 grid-row: 2/3;
                 grid-column: 4/5;
-                align-items: start;
                 border: $border;
                 background-color: hsl(208, 100%, 100%, 0);
                 color: $color3;
-                height: 3vh;
-                font-size: calc($font-size - 4px);
-                padding: 0 0.5vw 0 0.5vw;
+                height: 25px;
+                width: 80px;
+                font-size: calc($font-size - 6px);
                 margin: 0;
                 margin-top: -17px;
-                text-decoration: none;
-
+                text-align: center;
                 &:hover {
                     cursor: pointer;
                 }
-
             }
                 .order_img {
-                    width: 80px;
-                    height: 80px;
+                    width: 110px;
+                    height: 110px;
+                    margin-right: 10px;
                     grid-row: 1/4;
                     grid-column: 1/2;
                     border: -1px solid hsl(0, 0%, 0%, 0); 
                     border-radius: 50%;
                 }
-
                 .hr-dashed {
                     grid-row: 1/2;
-                    grid-column: 3/4;
+                    grid-column: 2/4;
                     margin: 0;
                     padding-top: 20px;
                     height: 0;
                     border: none;
                     border-bottom: 1px dashed $color2;
-                    width:13vw;
                 }
                 .order_name {
+                    padding-bottom: 10px;
                     padding-top: 0;
                     text-align: start;
                      grid-row: 1/2;
                      grid-column: 2/3;
-                    height: 13px;
                     font-size: calc($font-size - 4px);
                     color: darken($color3, $amount: 20%);
                     @extend %h3;
-                    width: fit-content;
-                   
-                }
+                        }
                 .order_price {
                     justify-self: center;
                     padding: 0;
                     margin: 0;
                     grid-row: 1/2;
                     grid-column: 4/5;
+                    font-size: 1em;
                     @extend %price;
                 }
                 .discribe {
@@ -154,8 +150,8 @@
                     margin: 0;
                     color: darken($color3, $amount: 60%);
                     font-size: calc($font-size - 5px);
-                    padding-top: 2vh;
-                    width: 20vw;
+                    padding-top: 30px;
+                    width: 300px;
                 }
             }
         }

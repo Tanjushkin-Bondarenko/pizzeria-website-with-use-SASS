@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza delicous</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link href="style/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/media/media.css">
+    <!-- <link rel="stylesheet" href="/media/media.css"> -->
     <script src="https://kit.fontawesome.com/55d4f8f751.js" crossorigin="anonymous"></script>
+    <script src="loadBasket.js" defer></script>
+    <script src="createDishesInOrder.js" defer></script>
+    <script src="addAndDelDishFromBusket.js" defer></script>
+    <script src="index.js" defer></script>
+
+
 </head>
 <body>
      <header> 
@@ -30,7 +36,7 @@
             
             <button id="basket">
                 <i class="fa-solid fa-basket-shopping basket_num"></i>
-                <span class="basket_quantity">0</span>
+                <span class="basket_quantity"></span>
                 <span id="basket_btn">Basket</span>
             </button>
             
@@ -140,7 +146,13 @@
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia
         </p>
           <span data-order="pizza1" class="home2_price order_price">$<span class="price">20.90</span></span>
-        <a href="#order"><button data-order="pizza1" class="order">Add to card</button></a>
+        <a href="#order"><button data-order="pizza1" class="order">Add to card</button>
+        <div data-order="pizza1" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="pizza1" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+        </a>
         </div>
     </div>
 
@@ -156,7 +168,13 @@
             Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
             <span data-order="pizza2" class="home2_price order_price">$<span class="price">40.00</span></span>
         
-        <a href="#order"><button data-order="pizza2" class="order">Add to card</button></a>
+        <a href="#order"><button data-order="pizza2" class="order">Add to card</button>
+            <div data-order="pizza2" class="quantity_btn" style="display: none;">
+                <i class="fa-solid fa-square-minus"></i>
+                <span data-order="pizza2" class="quantity_number">1</span>
+                <i class="fa-solid fa-square-plus"></i>
+            </div>
+        </a>
     </div>
     </div>
     <div class="home2_block_pizza3"> 
@@ -169,7 +187,13 @@
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="pizza3" class="home2_price order_price">$<span class="price">30.75</span></span>
         
-        <a href="#order"><button data-order="pizza3" class="order">Add to card</button></a>
+        <a href="#order"><button data-order="pizza3" class="order">Add to card</button>
+            <div data-order="pizza3" class="quantity_btn" style="display: none;">
+                <i class="fa-solid fa-square-minus"></i>
+                <span data-order="pizza3" class="quantity_number">1</span>
+                <i class="fa-solid fa-square-plus"></i>
+            </div>
+        </a>
 </div>
 </div>
 </div>
@@ -187,7 +211,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="drinks1" class="menu1_price order_price">$<span class="price">1.75</span></span>
-    <a href="#order"><button data-order="drinks1" class="menu1_order order">Order</button></a>    
+    <a href="#order"><button data-order="drinks1" class="menu1_order order">Order</button>
+        <div data-order="drinks1" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="drinks1" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
         
     </div>
@@ -200,7 +230,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="drinks2" class="menu1_price order_price">$<span class="price">1.25</span></span>
-    <a href="#order"><button data-order="drinks2" class="menu1_order order">Order</button></a>
+    <a href="#order"><button data-order="drinks2" class="menu1_order order">Order</button>
+        <div data-order="drinks2" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="drinks2" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>
     </div>
     </div>
     <div class="menu_foto3">
@@ -212,7 +248,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="drinks3" class="menu1_price order_price">$<span class="price">1.20</span></span>
-    <a href="#order"><button data-order="drinks3" class="menu1_order order">Order</button></a>    
+    <a href="#order"><button data-order="drinks3" class="menu1_order order">Order</button>
+        <div data-order="drinks3" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="drinks3" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
     </div>
 
@@ -222,7 +264,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="drinks4" class="menu1_price order_price">$<span class="price">2.80</span></span>
-    <a href="#order"><button data-order="drinks4" class="menu1_order order">Order</button></a>   
+    <a href="#order"><button data-order="drinks4" class="menu1_order order">Order</button>
+        <div data-order="drinks4" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="drinks4" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>   
     </div>
     </div>
     <div class="menu_foto4">
@@ -235,7 +283,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="drinks5" class="menu1_price order_price">$<span class="price">2.10</span></span>
-    <a href="#order"><button data-order="drinks5" class="menu1_order order">Order</button></a>    
+    <a href="#order"><button data-order="drinks5" class="menu1_order order">Order</button>
+        <div data-order="drinks5" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="drinks5" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
     </div>
         <div class="menu_foto5">
@@ -248,7 +302,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="drinks6" class="menu1_price order_price">$<span class="price">2.30</span></span>
-    <a href="#order"><button data-order="drinks6" class="menu1_order order">Order</button></a>    
+    <a href="#order"><button data-order="drinks6" class="menu1_order order">Order</button>
+        <div data-order="drinks6" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="drinks6" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
     </div>
         <div class="menu_foto6">
@@ -269,7 +329,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="burgers1" class="menu1_price order_price">$<span class="price">24.50</span></span>
-    <a href="#order"><button data-order="burgers1" class="menu1_order order">Order</button></a>
+    <a href="#order"><button data-order="burgers1" class="menu1_order order">Order</button>
+        <div data-order="burgers1" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="burgers1" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>
     </div>
         
     </div>
@@ -282,7 +348,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="burgers2" class="menu1_price order_price">$<span class="price">23.80</span></span>
-    <a href="#order"><button data-order="burgers2" class="menu1_order order">Order</button></a>
+    <a href="#order"><button data-order="burgers2" class="menu1_order order">Order</button>
+        <div data-order="burgers2" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="burgers2" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>
     </div>
     </div>
     <div class="menu_foto3">
@@ -294,7 +366,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="burgers3" class="menu1_price order_price">$<span class="price">22.90</span></span>
-    <a href="#order"><button data-order="burgers3" class="menu1_order order">Order</button></a>    
+    <a href="#order"><button data-order="burgers3" class="menu1_order order">Order</button>
+        <div data-order="burgers3" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="burgers3" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
     </div>
 
@@ -304,7 +382,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="burgers4" class="menu1_price order_price">$<span class="price">25.80</span></span>
-    <a href="#order"><button data-order="burgers4" class="menu1_order order">Order</button></a>   
+    <a href="#order"><button data-order="burgers4" class="menu1_order order">Order</button>
+        <div data-order="burgers4" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="burgers4" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>   
     </div>
     </div>
     <div class="menu_foto4">
@@ -317,7 +401,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="burgers5" class="menu1_price order_price">$<span class="price">24.10</span></span>
-    <a href="#order"><button data-order="burgers5" class="menu1_order order">Order</button></a>    
+    <a href="#order"><button data-order="burgers5" class="menu1_order order">Order</button>
+        <div data-order="burgers5" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="burgers5" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
     </div>
         <div class="menu_foto5">
@@ -330,7 +420,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="burgers6" class="menu1_price order_price">$<span class="price">22.90</span></span>
-    <a href="#order"><button data-order="burgers6" class="menu1_order order">Order</button></a>  
+    <a href="#order"><button data-order="burgers6" class="menu1_order order">Order</button>
+        <div data-order="burgers6" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="burgers6" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>  
     </div>
     </div>
         <div class="menu_foto6">
@@ -353,7 +449,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="pasta1" class="menu1_price order_price">$<span class="price">24.50</span></span>
-    <a href="#order"><button data-order="pasta1" class="menu1_order order">Order</button></a>   
+    <a href="#order"><button data-order="pasta1" class="menu1_order order">Order</button>
+        <div data-order="pasta1" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span  data-order="pasta1" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>   
     </div>
 
     </div>
@@ -366,7 +468,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="pasta2" class="menu1_price order_price">$<span class="price">23.00</span></span>
-    <a href="#order"><button data-order="pasta2" class="menu1_order order">Order</button></a>
+    <a href="#order"><button data-order="pasta2" class="menu1_order order">Order</button>
+        <div data-order="pasta2" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="pasta2" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>
     </div>
     </div>
     <div class="menu_foto3">
@@ -378,7 +486,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="pasta3" class="menu1_price order_price">$<span class="price">22.90</span></span>
-    <a href="#order"><button data-order="pasta3" class="menu1_order order">Order</button></a>    
+    <a href="#order"><button data-order="pasta3" class="menu1_order order">Order</button>
+        <div data-order="pasta3" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="pasta3" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
     </div>
 
@@ -388,7 +502,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="pasta4" class="menu1_price order_price">$<span class="price">25.80</span></span>
-    <a href="#order"><button data-order="pasta4"class="menu1_order order">Order</button></a>   
+    <a href="#order"><button data-order="pasta4"class="menu1_order order">Order</button>
+        <div data-order="pasta4" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="pasta4" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>   
     </div>
     </div>
     <div class="menu_foto4">
@@ -401,7 +521,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="pasta5" class="menu1_price order_price">$<span class="price">26.10</span></span>
-    <a href="#order"><button data-order="pasta5" class="menu1_order order">Order</button></a>   
+    <a href="#order"><button data-order="pasta5" class="menu1_order order">Order</button>
+        <div data-order="pasta5" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="pasta5" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>   
     </div>
     </div>
         <div class="menu_foto5">
@@ -414,7 +540,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="pasta6" class="menu1_price order_price">$<span class="price">24.70</span></span>
-    <a href="#order"><button data-order="pasta6" class="menu1_order order">Order</button></a>
+    <a href="#order"><button data-order="pasta6" class="menu1_order order">Order</button>
+        <div data-order="pasta6" class="quantity_btn" style="display: none;">
+        <i class="fa-solid fa-square-minus"></i>
+        <span data-order="pasta6" class="quantity_number">1</span>
+        <i class="fa-solid fa-square-plus"></i>
+    </div>
+</a>
     </div>
     </div>
         <div class="menu_foto6">
@@ -436,7 +568,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia </p>
         <span data-order="hot_pizza1" class="menu1_price order_price">$<span class="price">32.50</span></span>
-    <a href="#order"><button data-order="hot_pizza1" class="menu1_order order">Order</button></a>
+    <a href="#order"><button data-order="hot_pizza1" class="menu1_order order">Order</button>
+        <div data-order="hot_pizza1" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="hot_pizza1" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>
     </div>
         
     </div>
@@ -450,7 +588,13 @@
        <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="hot_pizza2" class="menu1_price order_price">$<span class="price">23.50</span></span>
-       <a href="#order"><button data-order="hot_pizza2" class="menu1_order order">Order</button></a>    
+       <a href="#order"><button data-order="hot_pizza2" class="menu1_order order">Order</button>
+        <div data-order="hot_pizza2" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="hot_pizza2" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>    
     </div>
     </div>
     <div class="menu_foto3">
@@ -462,7 +606,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="hot_pizza3" class="menu1_price order_price">$<span class="price">25.90</span></span>
-    <a href="#order"><button data-order="hot_pizza3" class="menu1_order order">Order</button></a>   
+    <a href="#order"><button data-order="hot_pizza3" class="menu1_order order">Order</button>
+        <div data-order="hot_pizza3" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="hot_pizza3" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>   
     </div>
     </div>
 
@@ -472,7 +622,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="hot_pizza4"  class="menu1_price order_price">$<span class="price">21.80</span></span>
-    <a href="#order"><button data-order="hot_pizza4"  class="menu1_order order">Order</button></a>   
+    <a href="#order"><button data-order="hot_pizza4"  class="menu1_order order">Order</button>
+        <div data-order="hot_pizza4" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="hot_pizza4" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>   
     </div>
     </div>
     <div class="menu_foto4">
@@ -485,7 +641,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonantia</p>
         <span data-order="hot_pizza5" class="menu1_price order_price">$<span class="price">25.10</span></span>
-    <a href="#order"><button data-order="hot_pizza5" class="menu1_order order">Order</button></a> 
+    <a href="#order"><button data-order="hot_pizza5" class="menu1_order order">Order</button>
+        <div data-order="hot_pizza5" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="hot_pizza5" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a> 
     </div>
     </div>
         <div class="menu_foto5">
@@ -498,7 +660,13 @@
             <p>
         Far far away, behind the world mountains far from the countries Vokalia and Consonanti</p>
         <span data-order="hot_pizza6" class="menu1_price order_price">$<span class="price">22.90</span></span>
-    <a href="#order"><button data-order="hot_pizza6" class="menu1_order order">Order</button></a>
+    <a href="#order"><button data-order="hot_pizza6" class="menu1_order order">Order</button>
+        <div data-order="hot_pizza6" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="hot_pizza6" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+    </a>
     </div>
     </div>
         <div class="menu_foto6">
@@ -535,6 +703,11 @@
         <hr class="hr-dashed">
         <p data-order="menu_pizza1" class="order_price">$<span data-order="menu_pizza1" class="price">20.00</span></p>
         <button data-order="menu_pizza1" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza1" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="menu_pizza1" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     </div>
@@ -546,6 +719,11 @@
         <hr class="hr-dashed">
         <p data-order="menu_pizza2" class="order_price">$<span data-order="menu_pizza2" class="price">29.00</span></p>
         <button data-order="menu_pizza2" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza2" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="menu_pizza2" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
        </div>
@@ -558,6 +736,11 @@
         <hr class="hr-dashed">
         <p data-order="menu_pizza3" class="order_price">$<span data-order="menu_pizza3" class="price">22.00</span></p>
         <button data-order="menu_pizza3" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza3" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="menu_pizza3" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     </div>
@@ -571,6 +754,11 @@
  
         <p data-order="menu_pizza4"  class="order_price">$<span data-order="menu_pizza4" class="price">20.50</span></p>
         <button data-order="menu_pizza4" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza4" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="menu_pizza4" class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     </div>
@@ -582,6 +770,11 @@
         <hr class="hr-dashed">
         <p data-order="menu_pizza5" class="order_price">$<span data-order="menu_pizza5" class="price">49.91</span></p>
         <button data-order="menu_pizza5" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza5" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     </div>
@@ -593,6 +786,11 @@
         <hr class="hr-dashed">
         <p data-order="menu_pizza6" class="order_price">$<span data-order="menu_pizza6" class="price">21.00</span></p>
         <button data-order="menu_pizza6" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza6" class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="menu_pizza6"  class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     </div>
@@ -604,6 +802,11 @@
         <hr class="hr-dashed">
         <p data-order="menu_pizza7" class="order_price">$<span data-order="menu_pizza7" class="price">25.00</span></p>
         <button data-order="menu_pizza7" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza7 class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="menu_pizza7 class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     </div>
@@ -615,6 +818,11 @@
         <hr class="hr-dashed">
         <p data-order="menu_pizza8" class="order_price">$<span data-order="menu_pizza8 class="price">23.00</span></p>
         <button data-order="menu_pizza8" class="menu2_order order">Order</button>
+        <div data-order="menu_pizza8"  class="quantity_btn" style="display: none;">
+            <i class="fa-solid fa-square-minus"></i>
+            <span data-order="menu_pizza8"  class="quantity_number">1</span>
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
         <div class="discribe">
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
       </div>
@@ -814,7 +1022,7 @@
 </div>
 
 
-    <script src="index.js"></script>
+    
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> -->
 </body>
 </html>
